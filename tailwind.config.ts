@@ -13,6 +13,22 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors:{
+        'default': 'rgb(235,236,243)',
+        'brand': '#FF4400',
+        'background': 'rgb(17,17,17)',
+        'bg-opaque': 'rgb(17,17,17,0.25)',
+        'background-light': 'rgb(35,35,35)',
+        'background-dark': 'rgb(8,8,8)',
+      },
+      fontSize:{
+        'xs': '1.6rem',
+        'sm': '1.8rem',
+        'md': '2.2rem',
+        'lg': '3.6rem',
+        'xl': '5.6rem',
+        '2xl': '9.6rem',
+      }
     },
   },
   plugins: [],
