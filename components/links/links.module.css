@@ -1,0 +1,11 @@
+.links{
+    @apply flex gap-7 pt-3;
+}
+
+.link{
+    @apply opacity-40 relative z-20 text-brand;
+}
+
+.link:hover{
+    @apply opacity-100 transition-all;
+}

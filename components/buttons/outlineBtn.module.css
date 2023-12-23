@@ -1,0 +1,36 @@
+.outlineBtn{
+    @apply outline-none cursor-pointer py-4 px-8 border border-brand
+    bg-transparent text-brand text-sm rounded-b relative z-20 overflow-hidden transition-colors
+    delay-75;
+
+}
+
+.svgBackground{
+    display: none;
+}
+
+.outlineBtn:hover{
+    @apply text-default;
+}
+
+.outlineBtn::before {
+    content: "";
+    @apply absolute top-[-100%] left-[-100%] z-[-1] bg-brand size-full;
+    transition: 0.2s left, 0.2s top;
+}
+
+.outlineBtn:hover::before{
+    @apply left-0 top-0;
+}
+
+@media (max-width: 420px){
+    .outlineBtn{
+        @apply text-[0px] p-8;
+    }
+    .svgBackground{
+        @apply block;
+    }
+
+}
+
+
