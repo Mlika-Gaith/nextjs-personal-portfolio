@@ -1,0 +1,3 @@
+.home{
+    @apply grid grid-cols-[60px,1fr]
+}

@@ -28,7 +28,7 @@ const config: Config = {
         'lg': '3.6rem',
         'xl': '5.6rem',
         '2xl': '9.6rem',
-      }
+      },
     },
   },
   plugins: [],

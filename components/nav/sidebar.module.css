@@ -1,0 +1,32 @@
+.sideBar{
+    @apply bg-background-dark h-lvh sticky top-0
+    left-0 z-20 flex flex-col items-center overflow-hidden;
+}
+
+.logo{
+    @apply cursor-pointer flex-shrink-0 text-md font-black leading-4 w-[50px] h-[48px]
+    flex items-center justify-center bg-background rounded my-[1.8rem] mx-1;
+}
+
+.logoDot{
+    @apply text-md font-black leading-4 text-brand
+}
+
+.sideBar::-webkit-scrollbar{
+    display: none;
+}
+
+.navigationLink{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    @apply h-[100px] flex-shrink-0 text-sm font-normal flex items-center justify-center opacity-50
+    border-r-2 border-transparent transition-all delay-75 w-full;
+}
+
+.navigationLink:hover{
+    @apply bg-background border-r-2 border-brand opacity-100
+}
+
+.selected{
+    @apply bg-background border-r-2 border-brand opacity-100;
+}
