@@ -1,0 +1,54 @@
+.hero{
+    /* add bg effect */
+    @apply mt-[4rem] mb-[20rem] py-[4rem] px-10;
+}
+
+.heroGrid{
+    @apply gap-4 flex flex-nowrap flex-row items-center justify-between;
+}
+
+.textContainer{
+    @apply relative z-10 w-fit my-[2.8rem] mx-0 self-start;
+}
+
+.title{
+    @apply font-black text-2xl leading-3;
+}
+
+.titleDot{
+    @apply font-black text-2xl leading-3 text-brand;
+}
+
+.subTitle{
+    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-light;
+}
+
+.subTitleName{
+    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-bold text-brand uppercase;
+}
+
+.about{
+    @apply my-[2.4rem] mx-0 max-w-[750px] font-light;
+}
+
+.objectContainer{
+    @apply w-[100%] h-[70vh];
+}
+
+@media (max-width: 980px){
+    .hero{
+        @apply py-0 px-8 mt-6 mb-[4.8rem];
+    }
+    .title{
+        @apply text-xl;
+    }
+    .titleDot{
+        @apply text-xl;
+    }
+    .heroGrid{
+        @apply flex-col-reverse items-start flex-wrap;
+    }
+    .objectContainer{
+        @apply h-[50vh];
+    }
+}

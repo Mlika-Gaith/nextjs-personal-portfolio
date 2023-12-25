@@ -1,5 +1,6 @@
 import styles from "./home.module.css"
 import {SideBar, HeadBar} from "@components/nav";
+import {Hero} from "@components/heroSection/Hero"
 
 export const Home = () => {
     return (
@@ -7,6 +8,7 @@ export const Home = () => {
             <SideBar/>
             <main id="main">
                 <HeadBar/>
+                <Hero/>
             </main>
         </div>
     );

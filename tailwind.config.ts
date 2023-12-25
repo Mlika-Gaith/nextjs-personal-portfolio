@@ -15,7 +15,7 @@ const config: Config = {
       },
       colors:{
         'default': 'rgb(235,236,243)',
-        'brand': '#FF4400',
+        'brand': '#850A36',
         'background': 'rgb(17,17,17)',
         'bg-opaque': 'rgb(17,17,17,0.25)',
         'background-light': 'rgb(35,35,35)',

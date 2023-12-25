@@ -1,0 +1,9 @@
+.button{
+    @apply outline-none border-none cursor-pointer py-[1.2rem] px-[2.4rem]
+    bg-brand text-default text-sm rounded-b relative z-20 overflow-hidden
+    transition-opacity;
+}
+
+.button:hover{
+    @apply opacity-90;
+}
