@@ -2,11 +2,18 @@
 import styles from "./hero.module.css"
 import {Reveal} from "@components/utils";
 import {Button} from "@components/buttons";
-import {Suspense} from "react";
+import {Suspense, useEffect, useState} from "react";
 import {Scene} from "@components/3d";
 import {Loader} from "@components/loaders";
 
 export const Hero = () => {
+    const [show3DScene, setShow3DScene] = useState(false);
+    useEffect(() => {
+        const timer = setTimeout(()=>{
+            setShow3DScene(true);
+        }, 2000)
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <section className={`section-wrapper ${styles.hero}`}>
             <div className={styles.heroGrid}>
@@ -41,7 +48,7 @@ export const Hero = () => {
                 {/* SPHERE SECTION */}
                 <div className={styles.objectContainer}>
                     <Suspense fallback={<Loader/>}>
-                        <Scene />
+                        { show3DScene && <Scene />}
                     </Suspense>
                 </div>
             </div>

@@ -8,11 +8,11 @@
 }
 
 .textContainer{
-    @apply relative z-10 w-fit my-[2.8rem] mx-0 self-start;
+    @apply relative z-10 h-fit w-fit my-[4.8rem] mx-0 self-start;
 }
 
 .title{
-    @apply font-black text-2xl leading-3;
+    @apply font-black text-2xl leading-3 py-[3rem];
 }
 
 .titleDot{
@@ -20,7 +20,7 @@
 }
 
 .subTitle{
-    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-light;
+    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-light py-3;
 }
 
 .subTitleName{

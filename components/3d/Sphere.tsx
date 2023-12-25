@@ -56,7 +56,7 @@ function Model(props: any ) {
     const group = useRef()
     const { nodes, materials } = useGLTF("/assets/3d/planet.glb");
     // change colors
-    materials.material.color.setRGB(133 / 255, 10 / 255, 54 / 255); // RGB for dark red: (139, 0, 0)
+    materials.material.color.setHSL(0, 1, 0.1) // RGB for dark red: (139, 0, 0)
     // For the other materials, if you want to set them to black, use RGB (0, 0, 0)
     materials.material_1.color.setRGB(0, 0, 0);
     materials.material_2.color.setRGB(0, 0, 0);

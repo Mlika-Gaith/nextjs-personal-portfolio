@@ -23,7 +23,7 @@ export const Reveal: FC<Props>= ({children, width="fit-content"}) => {
             slideControls.start("hidden");
             mainControls.start("hidden");
         }
-    })
+    },[isInView, mainControls, slideControls])
 
     return (
         <div ref={ref} style={{position:'relative', width, overflow:'hidden'}}>
@@ -44,7 +44,15 @@ export const Reveal: FC<Props>= ({children, width="fit-content"}) => {
             }}
             animate={slideControls}
             transition={{duration: 0.5, ease:"easeIn"}}
-            className="absolute top-[4] bottom-[4] left-0 right-0 bg-brand z-20"/>
+            style={{
+                position :'absolute',
+                top:4,
+                bottom:0,
+                left:0,
+                right:0,
+                background:"#A4161A",
+                zIndex:20,
+            }}/>
         </div>
     );
 };
