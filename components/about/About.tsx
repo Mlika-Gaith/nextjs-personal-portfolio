@@ -2,22 +2,15 @@
 import {Reveal, SectionHeader} from "@components/utils";
 import styles from "./about.module.css"
 import {DotGrid} from "@components/dotGrid";
-import {Suspense} from "react";
-import {Loader} from "@components/loaders";
-import {Flag} from "@components/3d";
+
 export const About = () => {
     return (
         <section id="about" className={`section-wrapper`}>
             <SectionHeader title="About" direction="left"/>
             <div className={styles.about}>
                 <div className={styles.aboutGrid}>
-                    {/* 3d Object */}
-                    <div className={styles.objectContainer}>
-                        <Suspense fallback={<Loader/>}>
-                            {/* 3d object */}
-                            <Flag/>
-                        </Suspense>
-                    </div>
+                    {/* illustration Object */}
+
 
                     <div className={styles.textContainer}>
                         <Reveal>

@@ -17,9 +17,7 @@
 .aboutText{
     @apply mb-9 font-light;
 }
-.objectContainer{
-    @apply w-[100%] h-[55vh] flex items-center justify-center;
-}
+
 
 @media (max-width: 900px){
     .about{
@@ -28,9 +26,7 @@
     .aboutGrid{
         @apply items-start flex-wrap;
     }
-    .objectContainer{
-        @apply h-[40vh] w-[90%];
-    }
+
     .aboutText{
         @apply text-sm leading-10;
     }
