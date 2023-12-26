@@ -8,6 +8,8 @@ type Props = {
 
 export const OutlineBtn:FC<Props> = ({children, onClick}) => {
     return (
-        <button onClick={onClick} className={styles.outlineBtn}>{children}</button>
+        <button onClick={onClick} className={styles.outlineBtn}>
+            {children}
+        </button>
     );
 };

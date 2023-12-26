@@ -17,7 +17,7 @@
 }
 
 html,body{
-    @apply max-w-[100vw] overflow-hidden scroll-smooth text-sm
+    @apply max-w-[100vw] scroll-smooth text-sm
 }
 
 body{
@@ -29,12 +29,18 @@ a{
 }
 
 .section-wrapper{
-    @apply relative z-10 max-w-[1150px] m-auto p-[9.6rem] overflow-hidden;
+    @apply relative z-10 max-w-[1250px] m-auto py-[9.6rem] px-[5rem] overflow-hidden;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1400px){
     .section-wrapper{
-        @apply py-[7.2rem] px-[2.4rem];
+        @apply max-w-[1150px];
+    }
+}
+
+@media (max-width: 786px) { /* Added media query for 786px and below */
+    .section-wrapper {
+        @apply w-auto py-[7.2rem] px-5; /* Adjusted max-w, padding, and margin for 786px and below */
     }
 }
 

@@ -1,0 +1,31 @@
+.sectionHeader{
+    @apply flex items-center justify-center gap-10 mb-[2.4rem]  w-full;
+}
+
+.title{
+    @apply text-xl font-black text-start w-[40%];
+}
+.line{
+    @apply w-[60%] h-1 bg-default opacity-30;
+}
+.titleDot{
+    @apply text-brand;
+}
+
+@media (max-width: 900px){
+    .title{
+        @apply w-[60%];
+    }
+    .titleDot{
+        @apply text-sm;
+    }
+    .line{
+        @apply w-[40%] ;
+    }
+}
+
+@media (max-width: 768px){
+    .title{
+        @apply text-lg;
+    }
+}

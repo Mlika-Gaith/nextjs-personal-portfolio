@@ -12,6 +12,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'dotGradient': 'linear-gradient(180deg, var(--background), var(--text))',
+        'dotGradientHover': 'linear-gradient(180deg,rgb(17,17,17),#A4161A)',
       },
       colors:{
         'default': 'rgb(235,236,243)',

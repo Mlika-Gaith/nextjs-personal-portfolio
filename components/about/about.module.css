@@ -1,0 +1,40 @@
+.about{
+    @apply mt-0 py-0 px-[2.5rem] overflow-hidden;
+}
+
+.aboutGrid{
+    @apply gap-2 flex flex-nowrap flex-row items-center justify-between;
+}
+
+.textContainer{
+    @apply relative h-fit z-10 w-fit self-start mt-5;
+}
+
+.highlightFirstLetter:first-letter{
+    @apply bg-background-light p-4 rounded-lg text-brand font-bold mr-2.5 float-left text-lg;
+}
+
+.aboutText{
+    @apply mb-9 font-light;
+}
+.objectContainer{
+    @apply w-[100%] h-[55vh] flex items-center justify-center;
+}
+
+@media (max-width: 900px){
+    .about{
+        @apply py-0 px-[2rem] mt-[0.5rem];
+    }
+    .aboutGrid{
+        @apply items-start flex-wrap;
+    }
+    .objectContainer{
+        @apply h-[40vh] w-[90%];
+    }
+    .aboutText{
+        @apply text-sm leading-10;
+    }
+    .highlightFirstLetter:first-letter{
+        @apply font-medium text-md;
+    }
+}

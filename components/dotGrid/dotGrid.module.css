@@ -1,0 +1,26 @@
+.dotGrid{
+    @apply absolute top-[12px] bottom-[12px] right-[3.6rem]
+    max-w-[75%];
+}
+
+.dotWrapper{
+    transition: 0.25s background;
+    @apply cursor-pointer p-3 rounded-lg;
+}
+
+.dot{
+    @apply w-2 h-2 rounded-[50%] bg-dotGradient opacity-35;
+}
+
+.dotWrapper:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+.dotWrapper:hover > .dot {
+    background: linear-gradient(
+            180deg,
+            rgb(17,17,17),
+            #A4161A,
+    ) !important;
+    opacity: 1 !important;
+}

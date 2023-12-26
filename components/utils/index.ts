@@ -1,2 +1,4 @@
 import {Reveal} from "./Reveal";
-export {Reveal}
+import {SectionHeader} from "./SectionHeader";
+
+export {Reveal, SectionHeader}

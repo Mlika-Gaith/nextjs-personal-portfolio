@@ -25,11 +25,12 @@ export const Hero = () => {
                     </Reveal>
                     <Reveal>
                         <h2 className={styles.subTitle}> I AM
-                            <span className={styles.subTitleName}> Ghaith Mlika</span>
+                            <span className={styles.subTitleName}> Ghaith</span>
                         </h2>
                     </Reveal>
                     <Reveal>
-                        <h2 className={styles.subTitle}>Software Engineer</h2>
+                        <h2 className={styles.altTitle}>
+                            Software Engineer</h2>
                     </Reveal>
                     <Reveal>
                         <p className={styles.about}>Nice to meet you ! I am a dedicated
