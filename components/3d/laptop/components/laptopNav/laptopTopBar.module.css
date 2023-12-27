@@ -1,0 +1,23 @@
+.topBarWrapper{
+    @apply fixed z-50 w-full bg-background grid items-center top-0 h-[395px]
+    left-0;
+    transition: 0.3s ease-in-out;
+}
+.closeIconWrapper{
+    @apply text-brand absolute top-5 right-7 cursor-pointer text-sm outline-none;
+}
+.closeIcon{
+    @apply cursor-pointer font-medium capitalize mr-2;
+}
+.linksWrapper{
+    @apply text-brand text-sm font-bold;
+}
+.linksMenu{
+    @apply grid grid-cols-1 grid-rows-6 text-center;
+}
+.link{
+    @apply flex items-center justify-center decoration-0 cursor-pointer;
+}
+.link:hover{
+    @apply text-default transition-all;
+}

@@ -1,0 +1,18 @@
+.nav{
+    @apply bg-background h-[100px] flex justify-center items-center
+    text-[1.1rem] sticky top-0 z-10 w-full;
+}
+.navWrapper{
+    @apply flex justify-between h-[80px] z-[1] w-full px-[24px] py-0;
+
+}
+.navLogo{
+    @apply text-brand cursor-pointer text-md absolute top-4 left-4
+    ml-[24px] font-bold decoration-0;
+}
+.navIconWrapper{
+    @apply absolute top-4 right-6 text-md cursor-pointer text-brand;
+}
+.navIcon{
+    @apply cursor-pointer text-sm font-medium capitalize mr-2;
+}

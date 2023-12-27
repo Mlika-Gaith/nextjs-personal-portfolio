@@ -1,8 +1,10 @@
 "use client"
 import {Reveal, SectionHeader} from "@components/utils";
-import styles from "./about.module.css"
+import styles from "./about.module.css";
 import {DotGrid} from "@components/dotGrid";
-
+import {motion} from "framer-motion";
+import Illustration from "@public/assets/img/about.png";
+import Image from "next/image";
 export const About = () => {
     return (
         <section id="about" className={`section-wrapper`}>
@@ -10,7 +12,18 @@ export const About = () => {
             <div className={styles.about}>
                 <div className={styles.aboutGrid}>
                     {/* illustration Object */}
-
+                    <motion.div
+                    initial={{y: -30, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.5, delay:0.4}}>
+                        <Image
+                        className={styles.illustration}
+                        src={Illustration}
+                        alt="Developper"
+                        width={300}
+                        height={300}
+                        />
+                    </motion.div>
 
                     <div className={styles.textContainer}>
                         <Reveal>

@@ -1,0 +1,35 @@
+.heroContainer{
+    @apply text-default bg-background w-full h-[500px];
+}
+.heroWrapper{
+    @apply flex flex-col z-[1] w-full mx-auto py-5 px-4 items-center justify-center;
+}
+.topLine{
+    @apply text-default text-sm leading-3 font-medium tracking-wider uppercase my-5;
+}
+.heading{
+    @apply text-[2.5rem] leading-5 font-extrabold text-brand my-5;
+}
+.subtitle{
+    @apply text-[1rem] leading-10 text-default mb-4 max-w-[70%] text-wrap font-extralight;
+}
+.heroBtnWrap{
+    @apply flex items-center justify-around;
+}
+.heroBtn{
+    @apply flex items-center justify-center py-2 px-4 rounded-md whitespace-nowrap
+    outline-none cursor-pointer mx-4;
+    transition: all 0.2s ease-in-out;
+}
+.heroBtn1{
+    @apply bg-transparent text-brand border-brand border-2;
+}
+.heroBtn2{
+    @apply bg-brand;
+}
+.heroBtn2:hover{
+    @apply transition-colors opacity-80 bg-background-light text-brand;
+}
+.heroBtn1:hover{
+    @apply transition-colors bg-brand text-default;
+}

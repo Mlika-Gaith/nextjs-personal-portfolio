@@ -1,4 +1,4 @@
-import {Scene} from "./sphere/Sphere"
+import Scene from "./laptop/Laptop"
 export {
     Scene
 }
