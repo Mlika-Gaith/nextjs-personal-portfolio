@@ -1,34 +1,34 @@
 .canvas{
     @apply size-full bg-green-700;
 }
-.laptopH1{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    font-weight: 400;
-    font-size: 8em;
-    letter-spacing: -0.045em;
-    white-space: nowrap;
-}
 
 /* make content responsive for all screens :)*/
 
 .content {
-    width: 360px;
-    height: 220px;
+    width: 334px;
+    height: 216px;
     border-radius: 3px;
     padding: 0;
-    overflow: hidden;
-    scrollbar-width: none
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: #fff rgb(17,17,17) !important;
 }
 
-
 .wrapper {
-    width: 670px;
-    height: 255px;
+    background-color: red;
+    width: 640px;
+    height: 250px;
     transform: scale(0.5);
     transform-origin: top left;
 }
+/*
+screen less than 1400px
+width of wrapper : 600px
+height of wrapper: 210px
+screnn bigger than 1400px
+width of wrapper 683px
+height of wrapper 200px
+screen less then 480px
+width of wrapper 652px
+height of wrapper 225px
+*/

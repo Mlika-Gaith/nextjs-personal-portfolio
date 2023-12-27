@@ -1,0 +1,6 @@
+const group: MutableRefObject<THREE.Group<THREE.Object3DEventMap> | undefined> = useRef<THREE.Group<THREE.Object3DEventMap>>();
+type Props={
+    open: boolean,
+    hinge: Interpolation<number, 1.575 | -0.425>,
+    laptopScreenPosition: THREE.Vector3 | undefined
+}
