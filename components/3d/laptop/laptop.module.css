@@ -1,34 +1,12 @@
 .canvas{
-    @apply size-full bg-green-700;
+    @apply size-full box-border;
 }
-
-/* make content responsive for all screens :)*/
 
 .content {
-    width: 334px;
-    height: 216px;
-    border-radius: 3px;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scrollbar-color: #fff rgb(17,17,17) !important;
+    @apply w-[332px] h-[216px] rounded-[3px] p-0 overflow-x-hidden overflow-y-auto;
 }
-
 .wrapper {
-    background-color: red;
-    width: 640px;
-    height: 250px;
+    @apply w-[680px] h-[216px];
     transform: scale(0.5);
     transform-origin: top left;
 }
-/*
-screen less than 1400px
-width of wrapper : 600px
-height of wrapper: 210px
-screnn bigger than 1400px
-width of wrapper 683px
-height of wrapper 200px
-screen less then 480px
-width of wrapper 652px
-height of wrapper 225px
-*/

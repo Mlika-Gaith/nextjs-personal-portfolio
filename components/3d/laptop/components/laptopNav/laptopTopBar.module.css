@@ -7,7 +7,7 @@
     @apply text-brand absolute top-5 right-7 cursor-pointer text-sm outline-none;
 }
 .closeIcon{
-    @apply cursor-pointer font-medium capitalize mr-2;
+    @apply cursor-pointer font-medium capitalize mr-[70px];
 }
 .linksWrapper{
     @apply text-brand text-sm font-bold;
