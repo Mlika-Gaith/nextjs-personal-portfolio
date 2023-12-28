@@ -52,14 +52,21 @@ const Model: FC<Props> = ({ open, hinge, ...props }) => {
         if (screenWidth > 1100) {
             return new THREE.Vector3(-0.18, 0.09, 0.06);
         }
-        return new THREE.Vector3(0, 0.05, -0.09);
+        return new THREE.Vector3(-0.03, 0.04, -0.09);
+    }
+    // 1.65
+    const getScaleValue = () =>{
+        if (screenWidth < 786){
+            return 1.125;
+        }
+        return 1.65;
     }
 
     return (
         <group ref={group} {...props}
                onPointerOver={(e) => (e.stopPropagation(), setHovered(true))}
                onPointerOut={(e) => setHovered(false)}
-               dispose={null} scale={1.65}>
+               dispose={null} scale={getScaleValue()}>
             <three.group rotation-x={hinge} position={[0, -0.04, 0.41]}>
                 <group position={[0, 2.96, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
                     <mesh material={materials.aluminium} geometry={(nodes['Cube008'] as THREE.Mesh).geometry} />
@@ -89,11 +96,20 @@ export default function Scene() {
     // We turn this into a spring animation that interpolates between 0 and 1
     const props = useSpring({ open: Number(open) })
     return (
-        <web.main style={{ height:'100%', width:'100%',background: props.open.to([0, 1], ['#111111', '#A4161A'])}}>
-            <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }} className={styles.canvas}>
+        <web.main style={{
+            height:'100%',
+            width:'100%',
+            background: props.open.to([0, 1], ['#A4161A', '#d90429']),
+        }}>
+            <web.h1 style={{
+                opacity: props.open.to([0, 1], [1, 0]),
+                transform: props.open.to((o) => `translate3d(-50%,${o * 50 - 100}px,0)`)
+            }} className={styles.laptopH}>click<web.span className={styles.laptopHDot}>.</web.span>
+            </web.h1>
+            <Canvas dpr={[1, 2]} camera={{position: [0, 0, -30], fov: 35}} className={styles.canvas}>
                 <three.pointLight position={[10, 10, 10]}
                                   intensity={1.5}
-                                  color={props.open.to([0, 1], ['#111111', '#A4161A'])} />
+                                  color={props.open.to([0, 1], ['#A4161A', '#d90429'])} />
                     <group rotation={[0, Math.PI, 0]}
                            onClick={(e) =>
                                (e.stopPropagation(), setOpen(!open))}>
