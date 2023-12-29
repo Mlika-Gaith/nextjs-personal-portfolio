@@ -1,6 +1,6 @@
 "use client"
 import styles from "./hero.module.css"
-import {Reveal} from "@components/utils";
+import {Reveal} from "../../utils";
 import {Button} from "@components/buttons";
 import {Suspense, useEffect, useState} from "react";
 import {Scene} from "@components/3d";

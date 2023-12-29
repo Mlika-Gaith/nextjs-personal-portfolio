@@ -2,27 +2,10 @@
 import {useState,useEffect} from "react"
 import {motion} from "framer-motion"
 import styles from "./sidebar.module.css"
+import {useIntersectionObserver} from "@hooks";
 export const SideBar = () => {
+    const selectedFromObserver = useIntersectionObserver();
     const [selected, setSelected] = useState("");
-    useEffect(()=>{
-        const sections: NodeListOf<Element> = document.querySelectorAll(".section-wrapper");
-        const options ={
-            threshold: 0.3
-        }
-
-        // called whenever any observed element enters or exits the viewport
-        const callback = (entries: any) =>{
-            entries.forEach((entry: any) =>{
-                if (entry.isIntersecting){
-                    setSelected(entry.target.id);
-                }
-            })
-        }
-        // it allows you to detect when an element comes into or goes out of the viewport
-        const observer : IntersectionObserver = new IntersectionObserver(callback, options);
-        sections.forEach((section : any)=> observer.observe(section))
-        console.log(selected)
-    })
     return (
         <div className="bg-background-dark">
             <motion.nav
@@ -46,6 +29,17 @@ export const SideBar = () => {
                 }}
                 className={`${styles.navigationLink} ${selected === "about" ? styles.selected : ''}`}>
                     About
+                </motion.a>
+                <motion.a
+                initial={{x: -70}}
+                animate={{x: 0}}
+                transition={{duration:0.5, delay:0.1}}
+                href="#skills"
+                onClick={()=>{
+                    setSelected("skills")
+                }}
+                className={`${styles.navigationLink} ${selected === "skills" ? styles.selected : ''}`}>
+                    Skills
                 </motion.a>
                 <motion.a
                 initial={{x: -70}}

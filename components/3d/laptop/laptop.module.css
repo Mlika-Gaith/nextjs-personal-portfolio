@@ -20,10 +20,10 @@
     }
 }
 .content {
-    @apply w-[332px] h-[216px] rounded-[3px] p-0 overflow-x-hidden overflow-y-auto;
+    @apply w-[260px] h-[216px] rounded-[3px] p-0 overflow-x-hidden overflow-y-auto;
 }
 .wrapper {
-    @apply w-[680px] h-[216px];
+    @apply absolute w-[680px] h-[216px];
     transform: scale(0.5);
     transform-origin: top left;
 }

@@ -1,5 +1,5 @@
 "use client"
-import {Reveal, SectionHeader} from "@components/utils";
+import {Reveal, SectionHeader} from "../../utils";
 import styles from "./about.module.css";
 import {DotGrid} from "@components/dotGrid";
 import {motion} from "framer-motion";

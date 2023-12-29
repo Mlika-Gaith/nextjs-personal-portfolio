@@ -1,4 +1,6 @@
 import styles from "./laptopHero.module.css";
+import {useState} from "react";
+import {useIntersectionObserver} from "@hooks";
 const hero = {
     topLine: "GHAITH MLIKA",
     headline: "Software Engineer",
@@ -8,6 +10,8 @@ const hero = {
     buttonLabel2: "Go to Projects",
 }
 export const LaptopHero = () => {
+    const [selected, setSelected] = useState("");
+    const selectedFromObserver = useIntersectionObserver();
     return (
         <div className={styles.heroContainer}>
             <div className={styles.heroWrapper}>
@@ -15,12 +19,16 @@ export const LaptopHero = () => {
                 <p className={styles.heading}>{hero.headline}</p>
                 <p className={styles.subtitle}>{hero.description}</p>
                 <div className={styles.heroBtnWrap}>
-                    <button className={`${styles.heroBtn} ${styles.heroBtn1}`}>
+                    <a className={`${styles.heroBtn} ${styles.heroBtn1}`}
+                       href="#skills"
+                       onClick={()=> setSelected("skills")}>
                         {hero.buttonLabel1}
-                    </button>
-                    <button className={`${styles.heroBtn} ${styles.heroBtn2}`}>
+                    </a>
+                    <a className={`${styles.heroBtn} ${styles.heroBtn2}`}
+                    href="#projects"
+                    onClick={()=> setSelected("projects")}>
                         {hero.buttonLabel2}
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

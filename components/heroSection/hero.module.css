@@ -50,7 +50,7 @@
         @apply text-xl;
     }
     .heroGrid{
-        @apply flex-col-reverse items-start flex-wrap;
+        @apply relative flex-col-reverse items-start flex-wrap;
     }
 }
 
