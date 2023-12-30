@@ -7,6 +7,7 @@ import { a as three } from '@react-spring/three'
 import {a as web, Interpolation} from '@react-spring/web'
 import {HomeScreen} from "@components/3d/laptop/components";
 import styles from "./laptop.module.css"
+import {useScreenWidth} from "@hooks";
 
 type Props={
     open: boolean,
@@ -36,17 +37,8 @@ const Model: FC<Props> = ({ open, hinge, ...props }) => {
         }
     })
 
-
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-    useEffect(() => {
-        const handleResize = () => setScreenWidth(window.innerWidth);
-        window.addEventListener('resize', handleResize)
-        console.log(screenWidth)
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        }
-
-    }, []);
+    // get screen width
+    const screenWidth = useScreenWidth();
 
     const getLaptopPosition = () =>{
         if (screenWidth > 1100) {

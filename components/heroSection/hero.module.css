@@ -32,7 +32,7 @@
 }
 
 .about{
-    @apply my-[2.4rem] mx-0 max-w-[750px] font-light;
+    @apply my-[2.4rem] mx-0 max-w-[750px] font-light text-justify;
 }
 
 .objectContainer{

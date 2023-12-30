@@ -1,9 +1,22 @@
 import styles from "./dotGrid.module.css"
 import anime from "animejs"
+import {useScreenWidth} from "@hooks";
 export const DotGrid = () => {
-    const GRID_WIDTH : number = 25;
-    const GRID_HEIGHT : number = 25;
-    const dots : React.JSX.Element[] = [];
+    const screenWidth = useScreenWidth();
+    function getGridSize(){
+        if (screenWidth > 786 && screenWidth <= 1024){
+            return [22,24]
+        }
+        if (screenWidth>486 && screenWidth <= 768){
+            return [24,18]
+        }
+        if (screenWidth <= 486){
+            return [14,16]
+        }
+        return [26,22]
+    }
+    const [GRID_WIDTH, GRID_HEIGHT ] : number[] = getGridSize();
+    const dots :JSX.Element[] = [];
 
     const handleDotClick = (e: any) =>{
         anime({
@@ -44,7 +57,8 @@ export const DotGrid = () => {
         }
     }
     return (
-        <div style={{gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)`}}>
+        <div style={{gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)`}}
+             className={styles.dotGrid}>
             {dots.map((dot)=>dot)}
         </div>
     );
