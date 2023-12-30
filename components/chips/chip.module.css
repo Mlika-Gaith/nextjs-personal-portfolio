@@ -1,0 +1,4 @@
+.chip{
+    @apply text-xs bg-background-light py-[0.2rem]
+    px-[0.8rem] rounded-[999px] flex items-center gap-2;
+}

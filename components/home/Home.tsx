@@ -1,7 +1,9 @@
+"use client"
 import styles from "./home.module.css"
 import {SideBar, HeadBar} from "@components/nav";
 import {Hero} from "@components/heroSection/Hero"
 import {About} from "@components/about/About";
+import {Skills} from "@components/skills/Skills"
 
 export const Home = () => {
     return (
@@ -11,6 +13,7 @@ export const Home = () => {
                 <HeadBar/>
                 <Hero/>
                 <About/>
+                <Skills/>
             </main>
         </div>
     );

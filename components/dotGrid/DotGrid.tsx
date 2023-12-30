@@ -5,7 +5,7 @@ export const DotGrid = () => {
     const screenWidth = useScreenWidth();
     function getGridSize(){
         if (screenWidth > 786 && screenWidth <= 1024){
-            return [22,24]
+            return [26,24]
         }
         if (screenWidth>486 && screenWidth <= 768){
             return [24,18]

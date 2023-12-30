@@ -1,0 +1,22 @@
+.skills{
+    @apply grid gap-[2.4rem];
+    grid-template-columns: 1fr 350px;
+}
+
+.skillsText{
+    @apply mb-9 text-pretty text-justify font-light whitespace-nowrap;
+}
+
+.links{
+    @apply flex items-center gap-6;
+}
+.linksText{
+    @apply flex items-center gap-[0.8rem] text-sm text-brand;
+}
+
+@media(max-width: 1024px){
+    .skills{
+        @apply grid-cols-1;
+    }
+}
+

@@ -1,6 +1,6 @@
 "use client"
 import styles from "./headbar.module.css"
-import {Links} from "@components/links/Links"
+import {Links} from "@components/links"
 import {OutlineBtn} from "@components/buttons"
 export const HeadBar = () => {
     return (
