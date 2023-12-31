@@ -31,6 +31,9 @@ const config: Config = {
         'xl': '5.6rem',
         '2xl': '9.6rem',
       },
+      zIndex:{
+        '100':'100',
+      }
     },
   },
   plugins: [],
