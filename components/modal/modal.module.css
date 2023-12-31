@@ -21,7 +21,7 @@
     @apply text-lg;
 }
 .modalTech{
-    @apply flex flex-wrap gap-[1.2rem] text-xs text-brand my-1 font-medium;
+    @apply flex flex-wrap gap-[1.2rem] text-xs text-brand mb-6 font-medium;
 }
 .content{
     @apply flex flex-col gap-[1.2rem] text-xs;

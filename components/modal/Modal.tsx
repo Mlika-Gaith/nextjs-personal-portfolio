@@ -15,8 +15,9 @@ type Props ={
     projectThumbnail: string,
     projectRepoLink: string,
     projectLiveDemoLink: string,
-    technologies: string[],
     modalContent: JSX.Element,
+    techChips: JSX.Element[],
+    liveDemo: boolean,
 }
 export const Modal: FC<Props> = ({isOpen,
                                      setIsOpen,
@@ -24,8 +25,9 @@ export const Modal: FC<Props> = ({isOpen,
                                      projectThumbnail,
                                      projectRepoLink,
                                      projectLiveDemoLink,
-                                     technologies,
-                                     modalContent}) => {
+                                     techChips,
+                                     modalContent,
+                                     liveDemo}) => {
     useEffect(() => {
         const body = document.querySelector("body");
         if (isOpen){
@@ -56,7 +58,11 @@ export const Modal: FC<Props> = ({isOpen,
                 <div className={styles.modalContent}>
                     <h4 className={styles.projectTitle}>{title}</h4>
                     <div className={styles.modalTech}>
-                        {technologies.join('-')}
+                        {techChips.map((techChip) => (
+                            <div>
+                                {techChip}
+                            </div>
+                        ))}
                     </div>
                     <div className={styles.content}>
                         {modalContent}
@@ -72,11 +78,12 @@ export const Modal: FC<Props> = ({isOpen,
                                   className={styles.projectLink}>
                                 <FiGithub/> source code
                             </Link>
-                            <Link href={projectLiveDemoLink}
-                                  target="_blank" rel="nofollow"
-                                  className={styles.projectLink}>
+                            {liveDemo && <Link href={projectLiveDemoLink}
+                                               target="_blank" rel="nofollow"
+                                               className={styles.projectLink}>
                                 <AiOutlineExport/> live project
-                            </Link>
+                            </Link> }
+
                         </div>
                     </div>
                 </div>
@@ -85,7 +92,7 @@ export const Modal: FC<Props> = ({isOpen,
 
         </div>
     )
-
+    // @ts-ignore
     return createPortal(content, document.getElementById("root"))
 
 };

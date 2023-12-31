@@ -16,6 +16,8 @@ type Props = {
     technologies: string[];
     title: string;
     projectRepoLink: string;
+    techChips: JSX.Element[],
+    liveDemo: boolean,
 }
 
 export const Project: FC<Props> = ({
@@ -26,6 +28,8 @@ export const Project: FC<Props> = ({
                                        technologies,
                                        title,
                                        projectRepoLink,
+                                       techChips,
+                                       liveDemo
                                    }) => {
     const [hovered, setHovered] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -78,10 +82,11 @@ export const Project: FC<Props> = ({
                                   className={styles.projectLinks}>
                                 <FiGithub size="2.8rem"/>
                             </Link>
-                            <Link href={projectLiveDemoLink} target="_blank" rel="nofollow"
-                                  className={styles.projectLinks}>
+                            { liveDemo && <Link href={projectLiveDemoLink} target="_blank" rel="nofollow"
+                                                className={styles.projectLinks}>
                                 <AiOutlineExport size="2.8rem"/>
-                            </Link>
+                            </Link>}
+
                         </div>
                     </Reveal>
 
@@ -109,8 +114,9 @@ export const Project: FC<Props> = ({
                 projectThumbnail={projectThumbnail}
                 projectRepoLink={projectRepoLink}
                 projectLiveDemoLink={projectLiveDemoLink}
-                technologies={technologies}
-                modalContent={modalContent}/>
+                modalContent={modalContent}
+                techChips={techChips}
+                liveDemo={liveDemo}/>
         </>
     );
 };
