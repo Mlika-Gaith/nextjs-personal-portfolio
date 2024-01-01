@@ -61,6 +61,7 @@ export const Project: FC<Props> = ({
                     className={styles.projectImageWrapper}
                 >
                     <Image
+                        priority
                         src={projectThumbnail}
                         alt={`an image of the ${title} project`}
                         width={500}

@@ -9,12 +9,13 @@ import {BiLogoTypescript,
     BiLogoSpringBoot,
     BiLogoDocker,
     BiLogoGit,
-    BiLogoAngular
 } from "react-icons/bi";
 import {Chip} from "@components/chips/Chip";
 import {TbBrandNextjs} from "react-icons/tb";
-import {SiFastapi, SiPostgresql, SiMongodb, SiFuturelearn} from "react-icons/si";
-import {GrRobot} from "react-icons/gr"
+import {SiFastapi, SiPostgresql, SiMongodb, SiFuturelearn, SiExpress, SiPytorch} from "react-icons/si";
+import {AiOutlineRobot} from "react-icons/ai";
+import Image from "next/image";
+import HuggingFace from "@public/assets/huggingface.svg";
 
 export const SkillsChips = () => {
     return (
@@ -42,6 +43,8 @@ export const SkillsChips = () => {
                               title="Spring Boot"/>
                         <Chip icon={<TbBrandNextjs size="2.6rem" color="#000000"/>}
                               title="Next.js"/>
+                        <Chip icon={<SiExpress size="2.6rem" color="#fff"/>}
+                              title="Express.js"/>,
                         <Chip icon={<SiFastapi size="2.2rem" color="#089D8E"/>}
                               title="FastAPI"/>
                         <Chip icon={<SiPostgresql size="2.2rem" color="#396C94"/>}
@@ -62,8 +65,12 @@ export const SkillsChips = () => {
                         <span className={styles.chipColumnTitle}>Progressing Skills</span>
                     </h4>
                     <div className={styles.chipsGrid}>
-                        <Chip icon={<BiLogoAngular size="2.6rem" color="#DD0031"/>} title="Angular" />
-                        <Chip icon={<GrRobot size="2.2rem" color="#7291B6"/>} title="Machine Learning" />
+                        <Chip icon={<AiOutlineRobot size="2.2rem" color="#EF5233"/>} title="Machine Learning" />
+                        <Chip icon={<SiPytorch size="2.2rem" color="#EF5233"/>} title="Pytorch"/>
+                        <Chip icon={<Image src={HuggingFace} alt="Hugging Face" height={26} width={26}/>}
+                              title="LayoutLMV3"/>
+                        <Chip icon={<Image src={HuggingFace} alt="Hugging Face" height={26} width={26}/>}
+                              title="HuggingFace Hub"/>
                     </div>
                 </div>
             </Reveal>

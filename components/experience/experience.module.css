@@ -1,0 +1,18 @@
+.expItem{
+    @apply mb-[2.4rem] py-8 px-[1.2rem] border-b border-background-light;
+}
+.heading{
+    @apply flex items-center justify-between mb-[1.2rem];
+}
+.title{
+    @apply text-md font-bold;
+}
+.company{
+    @apply text-brand font-bold;
+}
+.description{
+    @apply mb-[1.8rem] font-extralight;
+}
+.technologies{
+    @apply flex flex-wrap gap-[1.2rem];
+}
