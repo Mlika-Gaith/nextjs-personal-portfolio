@@ -10,7 +10,7 @@ type Props = {
 export const OutlineBtn:FC<Props> = ({children, onClick}) => {
     return (
         <button onClick={onClick} className={styles.outlineBtn}>
-            <BsFiletypePdf size="2.2rem"/>
+            <BsFiletypePdf size="2.2rem" className={styles.svgBackground}/>
             {children}
         </button>
     );

@@ -6,6 +6,7 @@ import {About} from "@components/about/About";
 import {Skills} from "@components/skills/Skills"
 import {Projects} from "@components/projects/Projects";
 import {Experience} from "@components/experience/Experience";
+import {Contact} from "@components/contact/Contact";
 
 export const Home = () => {
     return (
@@ -18,6 +19,7 @@ export const Home = () => {
                 <Skills/>
                 <Projects/>
                 <Experience/>
+                <Contact/>
             </main>
         </div>
     );

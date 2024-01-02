@@ -1,0 +1,36 @@
+.contactWrapper{
+    @apply max-w-[700px] m-auto rounded-[1.2rem];
+}
+
+.contactTitle{
+    @apply text-2xl text-center font-black leading-4 p-14;
+}
+.contactTitleDot{
+    @apply text-brand;
+}
+.contactText{
+    @apply text-center font-light my-[2.4rem] mx-0 text-wrap;
+}
+.contactLink{
+    @apply text-brand;
+}
+.contactLink:hover{
+    @apply underline underline-offset-4;
+}
+@media(max-width: 1024px){
+    .contactWrapper{
+        @apply max-w-[90%];
+    }
+}
+
+@media (max-width: 768px){
+    .contactTitle{
+        @apply text-xl;
+    }
+}
+
+@media (max-width: 486px){
+    .contactTitle{
+        @apply text-lg;
+    }
+}

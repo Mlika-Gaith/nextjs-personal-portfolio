@@ -1,0 +1,29 @@
+.form{
+    @apply size-full flex flex-col mx-0 my-8;
+}
+.formGroup{
+    @apply mb-8;
+}
+.formLabel{
+    @apply block mb-2.5 font-medium;
+}
+.formInput{
+    @apply bg-background border-brand border-[1.5px]
+    placeholder-gray-600 text-sm rounded-lg block w-full p-3.5;
+}
+.formBtn{
+    @apply flex items-center justify-center gap-[0.8rem]
+    w-fit text-sm m-auto transition-all duration-500
+    py-[12px] px-[30px] rounded-[1rem] bg-background-light;
+}
+.formBtn:hover{
+    @apply text-brand;
+}
+@media (max-width: 786px){
+    .formLabel{
+        @apply text-xs;
+    }
+    .formInput{
+        @apply text-xs;
+    }
+}
