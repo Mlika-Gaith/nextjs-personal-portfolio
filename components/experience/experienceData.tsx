@@ -1,10 +1,9 @@
 import {BiLogoReact} from "react-icons/bi";
 import {Chip} from "@components/chips/Chip";
-import {SiFastapi, SiPytorch, SiExpress, SiMongodb, SiPostgresql} from "react-icons/si";
-import {BiLogoJavascript, BiLogoPython, BiLogoGit, BiLogoGoogle} from "react-icons/bi";
+import {SiFastapi, SiPytorch, SiExpress, SiMongodb, SiPostgresql, SiTensorflow} from "react-icons/si";
+import {BiLogoJavascript, BiLogoPython, BiLogoGit, BiLogoGoogle, BiLogoGithub, BiLogoGitlab} from "react-icons/bi";
 import HuggingFace from "@public/assets/huggingface.svg"
 import Image from "next/image";
-import {SiTensorflow} from "@node_modules/react-icons/si";
 
 export const experiences = [
     {
@@ -37,6 +36,12 @@ export const experiences = [
                   title="PostgreSQL"/>,
             <Chip icon={<BiLogoGit size="2.6rem" color="#F05639"/>}
                   title="Git"/>,
+            <Chip icon={<BiLogoGithub size="2.6rem" color="#000"/>}
+                  title="Gitub"/>,
+            <Chip icon={<BiLogoGitlab size="2.6rem" color="#FC7016"/>}
+                  title="Gitlab"/>,
+            <Chip icon={<Image src={HuggingFace} alt="Hugging Face" height={26} width={26}/>}
+                  title="HuggingFace Hub"/>,
         ]
     },
     {
@@ -55,10 +60,12 @@ export const experiences = [
                   title="Express.js"/>,
             <Chip icon={<SiMongodb size="2.2rem" color="#199555"/>}
                   title="MongoDB"/>,
-            <Chip icon={<BiLogoGoogle size="2.2rem" color="#EB493B"/>}
+            <Chip icon={<BiLogoGoogle size="2.2rem" color="#E44432"/>}
                   title="Google Vision API"/>,
             <Chip icon={<BiLogoGit size="2.6rem" color="#F05639"/>}
                   title="Git"/>,
+            <Chip icon={<BiLogoGithub size="2.6rem" color="#000"/>}
+                  title="Gitub"/>,
         ]
     }
 ]

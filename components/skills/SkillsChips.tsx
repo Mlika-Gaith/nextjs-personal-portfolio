@@ -70,8 +70,6 @@ export const SkillsChips = () => {
                         <Chip icon={<SiPytorch size="2.2rem" color="#EF5233"/>} title="Pytorch"/>
                         <Chip icon={<Image src={HuggingFace} alt="Hugging Face" height={26} width={26}/>}
                               title="LayoutLMV3"/>
-                        <Chip icon={<Image src={HuggingFace} alt="Hugging Face" height={26} width={26}/>}
-                              title="HuggingFace Hub"/>
                     </div>
                 </div>
             </Reveal>

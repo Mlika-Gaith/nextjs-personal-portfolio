@@ -44,8 +44,8 @@ export const ExpItem: FC<Props> = ({
             </Reveal>
             <Reveal>
                 <div className={styles.technologies}>
-                    {technologies.map((technology: JSX.Element) => (
-                        <div>
+                    {technologies.map((technology: JSX.Element, index) => (
+                        <div key={index}>
                             {technology}
                         </div>
                     ))}

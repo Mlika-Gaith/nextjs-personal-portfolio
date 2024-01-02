@@ -36,10 +36,6 @@ export const Hero = () => {
                         ]}
                         wrapper="span"
                         style={{
-                            fontSize: "2.8rem",
-                            lineHeight: "1.1rem",
-                            marginTop: "1.5rem",
-                            fontWeight: "bold",
                             color: "#A4161A",
                         }}
                         speed={50}
@@ -63,10 +59,6 @@ export const Hero = () => {
                     ]}
                     wrapper="span"
                     style={{
-                        fontSize: "3rem",
-                        lineHeight: "1.1rem",
-                        marginTop: "1.5rem",
-                        fontWeight: "bold",
                         color: "#A4161A",
                     }}
                     speed={50}
@@ -102,7 +94,7 @@ export const Hero = () => {
                     </Reveal>
                 </div>
 
-                {/* SPHERE SECTION */}
+                {/* 3d Laptop SECTION */}
                 <div className={styles.objectContainer}>
                     <Suspense fallback={<Loader/>}>
                         {show3DScene && <Scene/>}

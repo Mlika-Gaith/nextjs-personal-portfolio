@@ -24,7 +24,7 @@
 }
 
 .about{
-    @apply my-[2.4rem] mx-0 max-w-[750px] font-light text-justify;
+    @apply my-4 mx-0 max-w-[750px] font-light text-justify;
 }
 
 .objectContainer{
@@ -58,5 +58,11 @@
     }
     .subTitle{
         @apply text-[3rem] leading-[1.5rem];
+    }
+}
+
+@media(max-width: 486px){
+    .subTitle{
+        @apply text-[2.8rem] leading-[1.1rem] mt-0;
     }
 }
