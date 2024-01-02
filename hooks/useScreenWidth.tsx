@@ -14,4 +14,5 @@ export function useScreenWidth (){
         }, []);
         return screenWidth;
     }
+    return 0;
 }
