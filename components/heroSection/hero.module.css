@@ -20,15 +20,7 @@
 }
 
 .subTitle{
-    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-light py-3;
-}
-
-.altTitle{
-    @apply text-md leading-[1.1rem] mt-[1.6rem] font-light py-3.5;
-}
-
-.subTitleName{
-    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-bold text-brand uppercase;
+    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-light py-3 pb-[2rem];
 }
 
 .about{
@@ -63,5 +55,8 @@
     }
     .objectContainer{
         @apply w-[95%]
+    }
+    .subTitle{
+        @apply text-[3rem] leading-[1.5rem];
     }
 }

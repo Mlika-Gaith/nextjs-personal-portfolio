@@ -4,9 +4,11 @@ import {SiFastapi, SiPytorch, SiExpress, SiMongodb, SiPostgresql} from "react-ic
 import {BiLogoJavascript, BiLogoPython, BiLogoGit, BiLogoGoogle} from "react-icons/bi";
 import HuggingFace from "@public/assets/huggingface.svg"
 import Image from "next/image";
+import {SiTensorflow} from "@node_modules/react-icons/si";
 
 export const experiences = [
     {
+        id: 1,
         title: "Mobile Development & Language Model Intern",
         company: "GPRO Consulting",
         time: "Feb 2023 - June 2023",
@@ -25,6 +27,8 @@ export const experiences = [
                   title="FastAPI"/>,
             <Chip icon={<SiPytorch size="2.2rem" color="#EF5233"/>}
                   title="Pytorch"/>,
+            <Chip icon={<SiTensorflow size="2.2rem" color="#FF9200"/>}
+                  title="Tensorflow"/>,
             <Chip icon={<Image src={HuggingFace} alt="Hugging Face"
                                height={26}
                                width={26}/>}
@@ -36,6 +40,7 @@ export const experiences = [
         ]
     },
     {
+        id: 2,
         title: "Mobile & Full-Stack Development Intern",
         company: "GPRO Consulting",
         time: "July 2022 - Sept 2022",

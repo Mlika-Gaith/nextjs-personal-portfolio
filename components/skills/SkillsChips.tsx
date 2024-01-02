@@ -1,7 +1,8 @@
 import styles from "./skillsChips.module.css"
 import {Reveal} from "@utils";
 import {FaCode} from "@node_modules/react-icons/fa6";
-import {BiLogoTypescript,
+import {
+    BiLogoTypescript,
     BiLogoJava,
     BiLogoJavascript,
     BiLogoPython,
@@ -12,7 +13,7 @@ import {BiLogoTypescript,
 } from "react-icons/bi";
 import {Chip} from "@components/chips/Chip";
 import {TbBrandNextjs} from "react-icons/tb";
-import {SiFastapi, SiPostgresql, SiMongodb, SiFuturelearn, SiExpress, SiPytorch} from "react-icons/si";
+import {SiFastapi, SiPostgresql, SiMongodb, SiFuturelearn, SiExpress, SiPytorch, SiTensorflow} from "react-icons/si";
 import {AiOutlineRobot} from "react-icons/ai";
 import Image from "next/image";
 import HuggingFace from "@public/assets/huggingface.svg";
@@ -44,7 +45,7 @@ export const SkillsChips = () => {
                         <Chip icon={<TbBrandNextjs size="2.6rem" color="#000000"/>}
                               title="Next.js"/>
                         <Chip icon={<SiExpress size="2.6rem" color="#fff"/>}
-                              title="Express.js"/>,
+                              title="Express.js"/>
                         <Chip icon={<SiFastapi size="2.2rem" color="#089D8E"/>}
                               title="FastAPI"/>
                         <Chip icon={<SiPostgresql size="2.2rem" color="#396C94"/>}
@@ -65,7 +66,7 @@ export const SkillsChips = () => {
                         <span className={styles.chipColumnTitle}>Progressing Skills</span>
                     </h4>
                     <div className={styles.chipsGrid}>
-                        <Chip icon={<AiOutlineRobot size="2.2rem" color="#EF5233"/>} title="Machine Learning" />
+                        <Chip icon={<SiTensorflow size="2.2rem" color="#FF9200"/>} title="Tensorflow"/>
                         <Chip icon={<SiPytorch size="2.2rem" color="#EF5233"/>} title="Pytorch"/>
                         <Chip icon={<Image src={HuggingFace} alt="Hugging Face" height={26} width={26}/>}
                               title="LayoutLMV3"/>

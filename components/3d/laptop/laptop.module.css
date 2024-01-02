@@ -20,7 +20,7 @@
     }
 }
 .content {
-    @apply w-[260px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
+    @apply w-[200px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
 }
 .wrapper {
     @apply absolute w-[680px] h-[216px];

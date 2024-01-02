@@ -16,3 +16,11 @@
 .technologies{
     @apply flex flex-wrap gap-[1.2rem];
 }
+@media (max-width: 1024px){
+    .heading{
+        @apply items-start;
+    }
+    .expItem{
+        @apply px-0;
+    }
+}

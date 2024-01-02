@@ -26,6 +26,9 @@
 
 @media (max-width: 768px){
     .title{
-        @apply text-lg;
+        @apply text-lg w-[65%];
+    }
+    .line{
+        @apply w-[35%] ;
     }
 }
