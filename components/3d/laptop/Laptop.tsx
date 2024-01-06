@@ -41,8 +41,12 @@ const Model: FC<Props> = ({ open, hinge, ...props }) => {
     const screenWidth = useScreenWidth();
 
     const getLaptopPosition = () =>{
+        if (screenWidth >= 1400 && screenWidth<=1920){
+            return new THREE.Vector3(-1.76, 0.46, 0.06);
+        }
+
         if (screenWidth > 1100) {
-            return new THREE.Vector3(-1.82, 0.09, 0.06);
+            return new THREE.Vector3(-1.78, 0.22, 0.06);
         }
         return new THREE.Vector3(-1.7, 0.04, -0.09);
         //[-4.02,0.08,-2.92]

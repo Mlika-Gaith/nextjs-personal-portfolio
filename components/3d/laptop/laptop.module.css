@@ -9,21 +9,27 @@
 .laptopHDot{
     @apply text-background;
 }
+
+.content {
+    @apply w-[200px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
+}
+.wrapper {
+    @apply absolute w-[664px] h-[216px];
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
 @media (min-width: 1025px) and (max-width:1400px){
     .laptopH{
         @apply top-[50%] left-[74%];
     }
 }
+
 @media (max-width: 1024px){
     .laptopH{
         @apply text-xl top-[24%] left-[48%];
     }
-}
-.content {
-    @apply w-[200px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
-}
-.wrapper {
-    @apply absolute w-[680px] h-[216px];
-    transform: scale(0.5);
-    transform-origin: top left;
+    .wrapper{
+        @apply w-[675px];
+    }
 }

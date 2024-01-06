@@ -32,6 +32,7 @@ a{
     @apply relative z-10 max-w-[1250px] m-auto py-[9.6rem] px-[5rem] overflow-hidden;
 }
 
+
 @media (max-width: 1400px){
     .section-wrapper{
         @apply max-w-[1150px];
