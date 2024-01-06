@@ -10,6 +10,11 @@ type ContextClassType = {
     error: string;
     default: string;
 };
+
+type ToastType = {
+    type: "success" | "error" | "default";
+};
+
 const contextClass : ContextClassType = {
     success: "bg-background-light",
     error: "bg-red-900",
@@ -138,8 +143,8 @@ export const Form = () => {
                 </button>
             </form>
             <ToastContainer
-                toastClassName={({ type })  => {
-                    // @ts-ignore
+                // @ts-ignore
+                toastClassName={({ type }: ToastType)  => {
                     return contextClass[type || "default"] +
                     " relative flex py-2 px-4 min-h-20 rounded-md " +
                     "justify-between overflow-hidden cursor-pointer"
