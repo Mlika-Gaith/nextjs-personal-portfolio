@@ -9,7 +9,7 @@ export const HeadBar = () => {
         <header className={styles.headBar}>
             <Links/>
             <OutlineBtn
-                onClick={() => window.open("/GHAITH MLIKA CV.pdf")}>
+                onClick={() => window.open("/Ghaith.pdf")}>
                 My Resume
             </OutlineBtn>
         </header>
