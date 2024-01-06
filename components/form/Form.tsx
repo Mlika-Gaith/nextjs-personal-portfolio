@@ -50,6 +50,7 @@ export const Form = () => {
                                 progress: undefined,
                                 theme: "dark",
                             });
+                            formRef.current?.reset();
                         }else{
                             toast.error('error sending message.', {
                                 position: "bottom-right",
@@ -75,6 +76,7 @@ export const Form = () => {
                             progress: undefined,
                             theme: "dark",
                         });
+
                     }
                 );
 
@@ -136,7 +138,7 @@ export const Form = () => {
                 </button>
             </form>
             <ToastContainer
-                toastClassName={({ type })   => {
+                toastClassName={({ type })  => {
                     // @ts-ignore
                     return contextClass[type || "default"] +
                     " relative flex py-2 px-4 min-h-20 rounded-md " +

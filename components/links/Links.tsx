@@ -12,7 +12,7 @@ export const Links = () => {
             initial={{y: -30, opacity: 0}}
             animate={{y: 0, opacity: 1}}
             transition={{duration: 0.5, delay: 0.1}}>
-                <Link href="" target="_blank" rel="nofollow">
+                <Link href="https://www.linkedin.com/in/ghaith-mlika-305797214/" target="_blank" rel="nofollow">
                     <FiLinkedin size="2.6rem" className={styles.link}/>
                 </Link>
             </motion.span>
@@ -20,7 +20,7 @@ export const Links = () => {
             initial={{y: -30, opacity: 0}}
             animate={{y: 0, opacity: 1}}
             transition={{duration: 0.5, delay: 0.2}}>
-                <Link href="" target="_blank" rel="nofollow">
+                <Link href="https://github.com/Mlika-Gaith" target="_blank" rel="nofollow">
                     <FiGithub size="2.6rem" className={styles.link}/>
                 </Link>
             </motion.span>
@@ -28,7 +28,7 @@ export const Links = () => {
             initial={{y: -30, opacity: 0}}
             animate={{y: 0, opacity: 1}}
             transition={{duration: 0.5, delay: 0.3}}>
-                <Link href="" target="_blank" rel="nofollow">
+                <Link href="https://gitlab.com/ghaith_mlika" target="_blank" rel="nofollow">
                     <RiGitlabLine size="2.6rem" className={styles.link}/>
                 </Link>
             </motion.span>
@@ -36,7 +36,7 @@ export const Links = () => {
             initial={{y: -30, opacity: 0}}
             animate={{y: 0, opacity: 1}}
             transition={{duration: 0.5, delay: 0.4}}>
-                <Link href="" target="_blank" rel="nofollow">
+                <Link href="https://twitter.com/GaithMlika" target="_blank" rel="nofollow">
                     <RiTwitterXLine size="2.6rem" className={styles.link}/>
                 </Link>
             </motion.span>

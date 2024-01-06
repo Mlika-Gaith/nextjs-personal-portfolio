@@ -21,7 +21,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className} id="root">{children}</body>
+    <head>
+      <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+      />
+    </head>
+    <body className={poppins.className} id="root">{children}</body>
     </html>
   )
 }

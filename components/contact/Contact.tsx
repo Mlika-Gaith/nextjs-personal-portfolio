@@ -15,14 +15,14 @@ export const Contact = () => {
                     <p className={styles.contactText}>
                         Open to discuss ? Shoot me an email if you want to connect !
                         You can also find me on{' '}
-                        <Link href="" target="_blank" rel="nofollow"
-                              className={styles.contactLink}>
-                            Linkedin
-                        </Link>{' '}
-                        Or{' '}
-                        <Link href="" target="_blank" rel="nofollow"
+                        <Link href="https://twitter.com/GaithMlika" target="_blank" rel="nofollow"
                               className={styles.contactLink}>
                             Twitter
+                        </Link>{' '}
+                        Or{' '}
+                        <Link href="https://www.linkedin.com/in/ghaith-mlika-305797214/" target="_blank" rel="nofollow"
+                              className={styles.contactLink}>
+                            Linkedin
                         </Link>
                     </p>
                 </Reveal>
