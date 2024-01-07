@@ -13,7 +13,7 @@ export const DotGrid = () => {
         if (screenWidth <= 486){
             return [14,16]
         }
-        return [26,22]
+        return [26,24]
     }
     const [GRID_WIDTH, GRID_HEIGHT ] : number[] = getGridSize();
     const dots :JSX.Element[] = [];

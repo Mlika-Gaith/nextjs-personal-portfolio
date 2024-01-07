@@ -28,6 +28,7 @@ export const Contact = () => {
                 </Reveal>
                 <Form/>
             </div>
+
         </section>
     );
 };
