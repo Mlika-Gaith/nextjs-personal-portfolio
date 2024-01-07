@@ -31,8 +31,7 @@ export const About = () => {
                         <Reveal>
                             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
                                 Hey there! I'm Ghaith Mlika, and I hail from Tunisia.
-                                I've just wrapped up my studies in Computer Science at "
-                                École Polytechnique de Sousse ", with a focus on software engineering.
+                                I've just wrapped up my studies in Computer Science at "École Polytechnique de Sousse", with a focus on software engineering.
                             </p>
                         </Reveal>
                         <Reveal>

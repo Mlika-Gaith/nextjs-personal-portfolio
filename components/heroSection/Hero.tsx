@@ -83,7 +83,7 @@ export const Hero = () => {
                     <Reveal>
                         <p className={styles.about}>Nice to meet you ! I am a dedicated
                             software engineer passionate about blending creativity with functionality.
-                            Interested in web development and machine learning,I am always
+                            Interested in web development and machine learning, I am always
                             eager to learn new technologies.Let's connect
                             and explore the possibilities !</p>
                     </Reveal>

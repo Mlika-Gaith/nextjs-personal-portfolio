@@ -14,7 +14,7 @@ export const Skills = () => {
                         <p className={styles.skillsText}>
                             During my university coursework in software engineering,
                             I explored diverse technologies and frameworks.
-                            These invaluable tools have served as trusty allies,
+                            These valuable tools have served as trusty allies,
                             empowering me to craft both academic and personal projects.
                         </p>
                     </Reveal>
@@ -26,7 +26,7 @@ export const Skills = () => {
                             I’ve also developed my skills using frontend frameworks like React.js and
                             Next.js, while also immersing myself in backend technologies
                             like Spring Boot, Express.js and FastAPI.
-                            Moreover, I posses some experience working with databases such as
+                            Moreover, I possess some experience working with databases such as
                             PostgreSQL and MongoDB.
                         </p>
                     </Reveal>
