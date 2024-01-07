@@ -62,7 +62,7 @@ export const SkillsChips = () => {
             <Reveal>
                 <div className={styles.chipsColumn}>
                     <h4 className={styles.chipColumnTitleWrapper}>
-                        <SiFuturelearn size="2.8rem" color="#A4161A"/>
+                        <FaCode size="2.8rem" color="#A4161A"/>
                         <span className={styles.chipColumnTitle}>Progressing Skills</span>
                     </h4>
                     <div className={styles.chipsGrid}>

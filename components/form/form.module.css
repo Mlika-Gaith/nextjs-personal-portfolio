@@ -19,6 +19,18 @@
 .formBtn:hover{
     @apply text-brand;
 }
+.messageWrapper{
+    @apply my-5 p-5 flex items-center justify-center;
+}
+.message{
+    @apply text-xs font-medium;
+}
+.messageSuccess{
+    @apply text-green-500;
+}
+.messageError{
+    @apply text-red-500;
+}
 @media (max-width: 786px){
     .formLabel{
         @apply text-xs;

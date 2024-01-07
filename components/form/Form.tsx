@@ -1,29 +1,15 @@
 import styles from "./form.module.css"
 import {MdEmail} from "react-icons/md";
-import {MutableRefObject, useRef} from "react";
+import {MutableRefObject, useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast, TypeOptions } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
-type ContextClassType = {
-    success: string;
-    error: string;
-    default: string;
-};
-
-type ToastType = {
-    type: "success" | "error" | "default";
-};
-
-const contextClass : ContextClassType = {
-    success: "bg-background-light",
-    error: "bg-red-900",
-    default: "bg-background-light"
-};
 export const Form = () => {
     const formRef: MutableRefObject<HTMLFormElement> =
         useRef<HTMLFormElement>(null!);
 
+    const [message, setMessage] = useState('');
+    const [showMessage, setShowMessage] = useState(false);
+    const [messageStatus, setMessageStatus] = useState('error');
     const isValidEmail = (email: string) =>{
         const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
         return pattern.test(email);
@@ -34,7 +20,7 @@ export const Form = () => {
         const subject = event.target.subject.value;
         const message = event.target.subject.value;
         if (isValidEmail(email)){
-           emailjs
+            emailjs
                 .sendForm(
                     process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID!,
                     process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
@@ -45,51 +31,30 @@ export const Form = () => {
                     (result) => {
                         console.log(result.text);
                         if (result.text === 'OK'){
-                            toast('message sent.', {
-                                position: "bottom-right",
-                                autoClose: 5000,
-                                hideProgressBar: false,
-                                closeOnClick: true,
-                                pauseOnHover: true,
-                                draggable: true,
-                                progress: undefined,
-                                theme: "dark",
-                            });
+                            setMessage('Message sent. Thank you.');
+                            setMessageStatus('success');
+                            setShowMessage(true);
+                            setTimeout(() => {
+                                setShowMessage(false);
+                            }, 6000); // Hide the message after 5 seconds
                             formRef.current?.reset();
                         }else{
-                            toast.error('error sending message.', {
-                                position: "bottom-right",
-                                autoClose: 5000,
-                                hideProgressBar: false,
-                                closeOnClick: true,
-                                pauseOnHover: true,
-                                draggable: true,
-                                progress: undefined,
-                                theme: "dark",
-                            });
+                            setMessage('Failed to send message.');
+                            setMessageStatus('error')
+                            setShowMessage(true);
                         }
                     },
                     (error) => {
                         console.log(error.text);
-                        toast.error('error sending message.', {
-                            position: "bottom-right",
-                            autoClose: 5000,
-                            hideProgressBar: false,
-                            closeOnClick: true,
-                            pauseOnHover: true,
-                            draggable: true,
-                            progress: undefined,
-                            theme: "dark",
-                        });
+                        setMessage('Failed to send message.');
+                        setMessageStatus('error');
+                        setShowMessage(true);
 
                     }
                 );
 
         }
     }
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
     return (
         <>
             <form ref={formRef} className={styles.form} onSubmit={handleSubmit}>
@@ -141,26 +106,15 @@ export const Form = () => {
                     <MdEmail size="2.2rem"/>
                     Send Email
                 </button>
+                {
+                    showMessage && <div className={styles.messageWrapper}>
+                    {messageStatus === 'success' ?
+                        <p className={`${styles.message} ${styles.messageSuccess}`}>{message}</p> :
+                        <p className={`${styles.message} ${styles.messageError}`}>{message}</p>}
+                    </div>
+                }
             </form>
-            <ToastContainer
-                // @ts-ignore
-                toastClassName={({ type }: ToastType)  => {
-                    return contextClass[type || "default"] +
-                    " relative flex py-2 px-4 min-h-20 rounded-md " +
-                    "justify-between overflow-hidden cursor-pointer"
-                }}
-                bodyClassName={() => "text-xs font-normal text-default flex flex-row items-center p-3"}
-                position="bottom-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="dark"
-            />
+
         </>
 
     );

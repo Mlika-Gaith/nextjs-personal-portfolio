@@ -4,6 +4,7 @@
 
 :root{
     font-size: 62.5%;
+    --toastify-color-progress-dark: #86affc;
 }
 
 *{
