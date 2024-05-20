@@ -6,9 +6,11 @@ import {
   SiMongodb,
   SiStyledcomponents,
   SiFramer,
+  SiKeras,
+  SiTensorflow,
 } from "react-icons/si";
 import { BiLogoReact, BiLogoNodejs } from "react-icons/bi";
-import { FaCcStripe } from "react-icons/fa";
+import { FaCcStripe, FaPython } from "react-icons/fa";
 import { RiOpenaiFill } from "react-icons/ri";
 
 export const projects = [
@@ -249,6 +251,33 @@ export const projects = [
           The technology stack incorporates React Native and Express.js,
           complemented by Google's on-device text detection module, with data
           storage managed through MongoDB.
+        </p>
+      </>
+    ),
+    liveDemo: false,
+  },
+  {
+    title: "AI Projects",
+    projectThumbnail: "/assets/img/projects/AI.png",
+    projectRepoLink:
+      "https://github.com/Mlika-Gaith/machine-learning---neural-networks.git",
+    projectLiveDemoLink: "",
+    technologies: ["Python", "Tensorflow", "Keras"],
+    techChips: [
+      <Chip icon={<FaPython size="2.6rem" color="#3470A2" />} title="Python" />,
+      <Chip
+        icon={<SiTensorflow size="2.2rem" color="#FF9200" />}
+        title="Tensorflow"
+      />,
+      <Chip icon={<SiKeras size="2.6rem" color="#D00000" />} title="Keras" />,
+    ],
+    description:
+      "All my projects of Machine Learning and Artificial Intelligence, serving as practical applications of the theoretical knowledge acquired from my AI learning courses.",
+    modalContent: (
+      <>
+        <p>
+          The technology stack is built around Python, and integrates renowned
+          AI libraries such as Tensorflow and Keras.
         </p>
       </>
     ),
