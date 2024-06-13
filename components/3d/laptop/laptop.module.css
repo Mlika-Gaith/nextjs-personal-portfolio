@@ -1,35 +1,41 @@
-.canvas{
-    @apply size-full box-border;
+.canvas {
+  @apply size-full box-border;
 }
-.laptopH{
-    @apply m-0 p-0 absolute top-[45%] left-[70%] font-black text-2xl
+.laptopH {
+  @apply m-0 p-0 absolute top-[45%] left-[70%] font-black text-2xl
         tracking-wide capitalize whitespace-nowrap;
-    transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
-.laptopHDot{
-    @apply text-background;
+.laptopHDot {
+  @apply text-background;
 }
 
 .content {
-    @apply w-[200px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
+  @apply w-[200px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
 }
 .wrapper {
-    @apply absolute w-[664px] h-[216px];
-    transform: scale(0.5);
-    transform-origin: top left;
+  @apply absolute w-[644px] h-[226px];
+  transform: scale(0.5);
+  transform-origin: top left;
 }
 
-@media (min-width: 1025px) and (max-width:1400px){
-    .laptopH{
-        @apply top-[50%] left-[74%];
-    }
+@media (min-width: 1400px) {
+  .wrapper {
+    @apply absolute w-[668px];
+  }
 }
 
-@media (max-width: 1024px){
-    .laptopH{
-        @apply text-xl top-[24%] left-[48%];
-    }
-    .wrapper{
-        @apply w-[675px];
-    }
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .laptopH {
+    @apply top-[50%] left-[74%];
+  }
+}
+
+@media (max-width: 1024px) {
+  .laptopH {
+    @apply text-xl top-[24%] left-[48%];
+  }
+  .wrapper {
+    @apply w-[675px];
+  }
 }
