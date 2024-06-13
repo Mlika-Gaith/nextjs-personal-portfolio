@@ -20,7 +20,7 @@
 
 .illustration {
   @apply object-cover w-[90%] h-[90%] z-10 outline outline-2
-    outline-brand outline-offset-4;
+    outline-brand outline-offset-4 rounded-full;
 }
 .illustration:hover {
   @apply outline-dotted outline-brand outline-offset-[6px] scale-105;

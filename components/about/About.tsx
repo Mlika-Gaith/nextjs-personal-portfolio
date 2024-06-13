@@ -3,13 +3,14 @@ import { Reveal, SectionHeader } from "@utils";
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { DotGrid } from "@components/dotGrid";
 export const About = () => {
   return (
     <section id="about" className={`section-wrapper`}>
       <SectionHeader title="About" direction="left" />
       <div className={styles.about}>
+        <DotGrid />
         <div className={styles.aboutGrid}>
-          {/* illustration Object 
           <motion.div
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -18,12 +19,12 @@ export const About = () => {
           >
             <Image
               className={styles.illustration}
-              src={Illustration}
+              src="/assets/img/me.png"
               alt="Developper"
               width={300}
-              height={250} />
-          
-          </motion.div>*/}
+              height={250}
+            />
+          </motion.div>
 
           <div className={styles.textContainer}>
             <Reveal>

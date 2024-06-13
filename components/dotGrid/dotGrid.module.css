@@ -1,45 +1,46 @@
-.dotGrid{
-    @apply left-[3.6rem] bottom-[16%] absolute
+.dotGrid {
+  @apply left-[3.6rem] bottom-[26%] absolute
     max-w-[75%] grid z-0;
 }
 
-.dotWrapper{
-    transition: 0.25s background;
-    @apply cursor-crosshair px-3 h-8 rounded-lg flex items-center justify-center;
+.dotWrapper {
+  transition: 0.25s background;
+  @apply cursor-crosshair px-3 h-8 rounded-lg flex items-center justify-center;
 }
 
-.dot{
-    @apply w-3 h-3 rounded-[50%] bg-dotGradient opacity-85;
+.dot {
+  @apply w-3 h-3 rounded-[50%] bg-dotGradient opacity-85;
 }
 
-.dotWrapper:hover{
-    background: rgba(255,255,255,0.15);
+.dotWrapper:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .dotWrapper:hover > .dot {
-    background: linear-gradient(
-            180deg,
-            rgb(17,17,17),
-            #A4161A,
-    ) !important;
-    opacity: 1 !important;
+  background: linear-gradient(180deg, rgb(17, 17, 17), #a4161a) !important;
+  opacity: 1 !important;
 }
 
-@media (max-width : 1024px){
-    .dotGrid{
-        @apply bottom-[42%];
-    }
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .dotGrid {
+    @apply bottom-[18%];
+  }
 }
-@media (max-width: 786px){
-    .dotGrid{
-        @apply bottom-[51%];
-    }
+@media (max-width: 1024px) {
+  .dotGrid {
+    @apply bottom-[42%];
+  }
 }
-@media (max-width: 486px){
-    .dotGrid{
-        @apply bottom-[70%];
-    }
-    .dot{
-        @apply h-2 w-2;
-    }
+@media (max-width: 786px) {
+  .dotGrid {
+    @apply bottom-[51%];
+  }
+}
+@media (max-width: 486px) {
+  .dotGrid {
+    @apply bottom-[70%];
+  }
+  .dot {
+    @apply h-2 w-2;
+  }
 }
