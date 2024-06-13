@@ -7,11 +7,11 @@
 }
 
 .textContainer {
-  @apply relative h-fit z-10 w-fit self-start mt-5;
+  @apply relative h-fit w-fit self-start mt-5;
 }
 
 .aboutText {
-  @apply mb-9 font-light text-pretty text-justify whitespace-nowrap;
+  @apply mb-9 font-light text-pretty text-justify;
 }
 
 .illustrationContainer {
@@ -69,7 +69,9 @@
 .outlineBtn:hover::before {
   @apply left-0 top-0;
 }
-
+.test {
+  @apply z-[9999999] p-4 bg-background-dark rounded-md text-default text-sm;
+}
 @media (max-width: 486px) {
   .illustrationContainer {
     @apply size-[95%] p-10;

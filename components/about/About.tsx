@@ -4,6 +4,7 @@ import styles from "./about.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { DotGrid } from "@components/dotGrid";
+import Status from "@components/status/status";
 export const About = () => {
   return (
     <section id="about" className={`section-wrapper`}>
@@ -20,17 +21,15 @@ export const About = () => {
             <Image
               className={styles.illustration}
               src="/assets/img/me.png"
-              alt="Developper"
+              alt="my-image"
               width={300}
               height={250}
             />
+            <Status />
           </motion.div>
-
           <div className={styles.textContainer}>
             <Reveal>
-              <p
-                className={`${styles.aboutText} ${styles.highlightFirstLetter}`}
-              >
+              <p className={styles.aboutText}>
                 Hey there! I'm Ghaith Mlika, and I hail from Tunisia. I've just
                 wrapped up my studies in Computer Science at "École
                 Polytechnique de Sousse", with a focus on software engineering.

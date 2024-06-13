@@ -1,46 +1,46 @@
-.modal{
-    @apply fixed top-0 left-0 right-0 h-[100vh] py-[4.8rem]
+.modal {
+  @apply fixed top-0 left-0 right-0 h-[100vh] py-[4.8rem]
     px-[1.2rem] bg-bg-opaque backdrop-blur overflow-y-scroll flex
-    justify-center cursor-pointer z-100;
+    justify-center cursor-pointer z-[100];
 }
-.closeModalBtn{
-    @apply bg-none border-none text-default text-md absolute
+.closeModalBtn {
+  @apply bg-none border-none text-default text-md absolute
     top-[1.2rem] right-[1.2rem] cursor-pointer;
 }
-.modalCard{
-    @apply w-full max-w-[700px] h-fit rounded-[1.2rem]
+.modalCard {
+  @apply w-full max-w-[700px] h-fit rounded-[1.2rem]
     overflow-hidden bg-background-light drop-shadow-lg cursor-auto;
 }
-.modalImage{
-    @apply w-full
+.modalImage {
+  @apply w-full;
 }
-.modalContent{
-    @apply p-[2.4rem];
+.modalContent {
+  @apply p-[2.4rem];
 }
-.projectTitle{
-    @apply text-lg;
+.projectTitle {
+  @apply text-lg;
 }
-.modalTech{
-    @apply flex flex-wrap gap-[1.2rem] text-xs text-brand mb-6 font-medium;
+.modalTech {
+  @apply flex flex-wrap gap-[1.2rem] text-xs text-brand mb-6 font-medium;
 }
-.content{
-    @apply flex flex-col gap-[1.2rem] text-xs;
+.content {
+  @apply flex flex-col gap-[1.2rem] text-xs;
 }
-.modalFooter{
-    @apply mt-[2.4rem];
+.modalFooter {
+  @apply mt-[2.4rem];
 }
-.linksText{
-    @apply font-bold text-md mb-[0.8rem];
+.linksText {
+  @apply font-bold text-md mb-[0.8rem];
 }
-.linksTextDot{
-    @apply text-brand;
+.linksTextDot {
+  @apply text-brand;
 }
-.links{
-    @apply flex items-center gap-[1.2rem];
+.links {
+  @apply flex items-center gap-[1.2rem];
 }
-.projectLink{
-    @apply flex items-center gap-2 text-xs text-brand;
+.projectLink {
+  @apply flex items-center gap-2 text-xs text-brand;
 }
-.projectLink:hover{
-    @apply decoration-1 underline underline-offset-2;
+.projectLink:hover {
+  @apply decoration-1 underline underline-offset-2;
 }
