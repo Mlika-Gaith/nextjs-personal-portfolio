@@ -3,7 +3,6 @@ import anime from "animejs";
 import { useScreenWidth } from "@hooks";
 export const DotGrid = () => {
   const screenWidth = useScreenWidth();
-  console.log(screenWidth);
   function getGridSize() {
     if (screenWidth > 1024 && screenWidth <= 1400) {
       return [26, 20];

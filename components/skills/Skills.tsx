@@ -40,7 +40,8 @@ export const Skills = () => {
           <Reveal>
             <p className={styles.skillsText}>
               Please feel free to explore my GitHub and GitLab profiles below to
-              review some of my showcased projects.
+              review some of my showcased projects (I am more active on Github
+              &#128513;).
             </p>
           </Reveal>
           <Reveal>
