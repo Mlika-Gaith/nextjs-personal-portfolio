@@ -2,17 +2,14 @@
 import { Reveal, SectionHeader } from "@utils";
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
-import Illustration from "@public/assets/img/about.png";
 import Image from "next/image";
-import { PiCertificateBold } from "react-icons/pi";
-import { OutlineBtn } from "@components/buttons";
 export const About = () => {
   return (
     <section id="about" className={`section-wrapper`}>
       <SectionHeader title="About" direction="left" />
       <div className={styles.about}>
         <div className={styles.aboutGrid}>
-          {/* illustration Object */}
+          {/* illustration Object 
           <motion.div
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -24,9 +21,9 @@ export const About = () => {
               src={Illustration}
               alt="Developper"
               width={300}
-              height={250}
-            />
-          </motion.div>
+              height={250} />
+          
+          </motion.div>*/}
 
           <div className={styles.textContainer}>
             <Reveal>
