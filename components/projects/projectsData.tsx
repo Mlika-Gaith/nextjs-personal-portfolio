@@ -8,6 +8,10 @@ import {
   SiFramer,
   SiKeras,
   SiTensorflow,
+  SiNodedotjs,
+  SiTypescript,
+  SiJavascript,
+  SiVite,
 } from "react-icons/si";
 import { BiLogoReact, BiLogoNodejs } from "react-icons/bi";
 import { FaCcStripe, FaPython } from "react-icons/fa";
@@ -15,19 +19,80 @@ import { RiOpenaiFill } from "react-icons/ri";
 
 export const projects = [
   {
-    title: "AI Prompts",
-    projectThumbnail: "/assets/img/projects/AIPrompts.png",
-    projectRepoLink: "https://github.com/Mlika-Gaith/next.js-ai-prompts.git",
-    projectLiveDemoLink: "https://next-js-ai-prompts.vercel.app/",
-    technologies: ["Next.js", "Express.js", "Tailwind CSS", "MongoDB"],
+    title: "Note Niche",
+    projectThumbnail: "/assets/img/projects/NotionClone.png",
+    projectRepoLink: "https://github.com/Mlika-Gaith/notion-clone.git",
+    projectLiveDemoLink: "https://notion-clone-wine.vercel.app/",
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "Node.js",
+      "Tailwind CSS",
+      "MongoDB",
+    ],
     techChips: [
       <Chip
         icon={<TbBrandNextjs size="2.6rem" color="#000000" />}
         title="Next.js"
       />,
       <Chip
-        icon={<SiExpress size="2.6rem" color="#fff" />}
-        title="Express.js"
+        icon={<SiTypescript size="2.6rem" color="#2f74c0" />}
+        title="Typescript"
+      />,
+      <Chip
+        icon={<SiNodedotjs size="2.6rem" color="#7fc728" />}
+        title="Node.js"
+      />,
+      <Chip
+        icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
+        title="Tailwind CSS"
+      />,
+      <Chip
+        icon={<SiMongodb size="2.2rem" color="#199555" />}
+        title="MongoDB"
+      />,
+    ],
+    description: "Notion-inspired note-taking app.",
+    modalContent: (
+      <>
+        <p>
+          Add, delete, and share notes with ease. Collaborate in real-time and
+          access your notes across devices effortlessly. Simplify your workflow
+          and stay organized with our intuitive interface
+        </p>
+        <p>
+          The Technology Stack is based on Next.js, connected to a Node.js
+          backend, with data stored in MongoDB. User authentication is provided
+          by Clerk.
+        </p>
+      </>
+    ),
+    liveDemo: true,
+  },
+  {
+    title: "AI Prompts",
+    projectThumbnail: "/assets/img/projects/AIPrompts.png",
+    projectRepoLink: "https://github.com/Mlika-Gaith/next.js-ai-prompts.git",
+    projectLiveDemoLink: "https://next-js-ai-prompts.vercel.app/",
+    technologies: [
+      "Next.js",
+      "Javascript",
+      "Node.js",
+      "Tailwind CSS",
+      "MongoDB",
+    ],
+    techChips: [
+      <Chip
+        icon={<TbBrandNextjs size="2.6rem" color="#000000" />}
+        title="Next.js"
+      />,
+      <Chip
+        icon={<SiJavascript size="2.6rem" color="#efd81d" />}
+        title="Javascript"
+      />,
+      <Chip
+        icon={<SiNodedotjs size="2.6rem" color="#7fc728" />}
+        title="Node.js"
       />,
       <Chip
         icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
@@ -43,8 +108,9 @@ export const projects = [
       <>
         <p>An individual project I developed to hone my skills in Next.js.</p>
         <p>
-          The Technology Stack is based on Next.js, connected to an Express.js
-          backend, with data stored in MongoDB.
+          The Technology Stack is based on Next.js, connected to a Node.js
+          backend, with data stored in MongoDB. User authentication is provided
+          by NextAuth.
         </p>
       </>
     ),
@@ -57,7 +123,8 @@ export const projects = [
     projectLiveDemoLink: "",
     technologies: [
       "Next.js",
-      "Express.js",
+      "Typescript",
+      "Node.js",
       "Tailwind CSS",
       "MongoDB",
       "Stripe",
@@ -69,8 +136,12 @@ export const projects = [
         title="Next.js"
       />,
       <Chip
-        icon={<SiExpress size="2.6rem" color="#fff" />}
-        title="Express.js"
+        icon={<SiTypescript size="2.6rem" color="#2f74c0" />}
+        title="Typescript"
+      />,
+      <Chip
+        icon={<SiNodedotjs size="2.6rem" color="#7fc728" />}
+        title="Node.js"
       />,
       <Chip
         icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
@@ -98,7 +169,7 @@ export const projects = [
           proficiency in Next.js
         </p>
         <p>
-          The Technology Stack is based on Next.js, connected to an Express.js
+          The Technology Stack is based on Next.js, connected to a Node.js
           backend, with data stored in MongoDB.Additionally, Stripe has been
           incorporated for handling user payments, and OpenAI API is utilized
           for dynamic form generation.
@@ -108,11 +179,52 @@ export const projects = [
     liveDemo: false,
   },
   {
+    title: "Nexus",
+    projectThumbnail: "/assets/img/projects/NexusApp.png",
+    projectRepoLink: "https://github.com/Mlika-Gaith/modern-react-template.git",
+    projectLiveDemoLink: "https://main--nexus-react-modern-ui.netlify.app/",
+    technologies: ["Vite", "React.js", "Typescript", "Tailwind CSS"],
+    techChips: [
+      <Chip icon={<SiVite size="2.6rem" color="#8f64f6" />} title="Vite" />,
+      <Chip
+        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
+        title="React.js"
+      />,
+      <Chip
+        icon={<SiTypescript size="2.6rem" color="#2f74c0" />}
+        title="Typescript"
+      />,
+      <Chip
+        icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
+        title="Tailwind CSS"
+      />,
+    ],
+    description: "An intuitive UI/UX Design for an AI App.",
+    modalContent: (
+      <>
+        <p>
+          A modern AI UI/UX project inspired by the 2024 Bento Box design trend.
+        </p>
+        <p>
+          The Technology Stack is based on Vite, React.js , Typescript and
+          Tailwind CSS
+        </p>
+      </>
+    ),
+    liveDemo: true,
+  },
+  {
     title: "PolyClubs",
     projectThumbnail: "/assets/img/projects/PolyClubs.png",
     projectRepoLink: "https://github.com/Mlika-Gaith/mern-stack-blog.git",
     projectLiveDemoLink: "",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Javascript",
+      "MongoDB",
+    ],
     techChips: [
       <Chip
         icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
@@ -125,6 +237,10 @@ export const projects = [
       <Chip
         icon={<BiLogoNodejs size="2.6rem" color="#8BC500" />}
         title="Node.js"
+      />,
+      <Chip
+        icon={<SiJavascript size="2.6rem" color="#efd81d" />}
+        title="Javascript"
       />,
       <Chip
         icon={<SiMongodb size="2.2rem" color="#199555" />}
