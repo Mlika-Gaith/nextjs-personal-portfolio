@@ -58,7 +58,7 @@ export const About = () => {
             </Reveal>
           </div>
         </div>
-        <div className="flex items-center justify-center py-4">
+        <div className={styles.outlineBtnContainer}>
           <button
             onClick={() => window.open("/Diplome.pdf")}
             className={styles.outlineBtn}

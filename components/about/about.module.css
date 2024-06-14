@@ -47,6 +47,9 @@
     @apply size-full;
   }
 }
+.outlineBtnContainer {
+  @apply flex items-center justify-center py-4 mt-6;
+}
 .outlineBtn {
   @apply outline-none cursor-pointer py-4 px-8 border border-brand
       bg-transparent text-brand text-sm rounded relative z-20 overflow-hidden transition-colors
