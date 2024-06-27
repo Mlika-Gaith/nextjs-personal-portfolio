@@ -3,14 +3,11 @@ import { Reveal, SectionHeader } from "@utils";
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { DotGrid } from "@components/dotGrid";
-import Status from "@components/status/status";
 export const About = () => {
   return (
     <section id="about" className={`section-wrapper`}>
       <SectionHeader title="About" direction="left" />
       <div className={styles.about}>
-        <DotGrid />
         <div className={styles.aboutGrid}>
           <motion.div
             initial={{ y: -30, opacity: 0 }}
@@ -18,14 +15,13 @@ export const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className={styles.illustrationContainer}
           >
-            <Image
+            <img
               className={styles.illustration}
               src="/assets/img/me.png"
               alt="my-image"
               width={300}
               height={250}
             />
-            <Status />
           </motion.div>
           <div className={styles.textContainer}>
             <Reveal>
@@ -57,14 +53,6 @@ export const About = () => {
               </p>
             </Reveal>
           </div>
-        </div>
-        <div className={styles.outlineBtnContainer}>
-          <button
-            onClick={() => window.open("/Diplome.pdf")}
-            className={styles.outlineBtn}
-          >
-            My École Polytechnique de Sousse Diploma
-          </button>
         </div>
       </div>
     </section>

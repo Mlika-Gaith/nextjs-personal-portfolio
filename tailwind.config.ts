@@ -31,7 +31,10 @@ const config: Config = {
         xl: "5.6rem",
         "2xl": "9.6rem",
       },
-
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        rochester: ["Rochester", "cursive"],
+      },
       gridTemplateColumns: {
         "custom-layout": "1fr 350px",
       },

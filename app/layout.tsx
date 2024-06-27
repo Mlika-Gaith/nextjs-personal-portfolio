@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Rochester } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -7,6 +7,12 @@ const poppins = Poppins({
   display: "swap",
   variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const rochester = Rochester({
+  weight: "400",
+  variable: "--font-rochester",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +35,11 @@ export default function RootLayout({
           sizes="<generated>"
         />
       </head>
-      <body className={poppins.className} id="root" suppressHydrationWarning>
+      <body
+        className={`${poppins.className} ${rochester.variable}`}
+        id="root"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
