@@ -2,7 +2,7 @@
 import { Reveal, SectionHeader } from "@utils";
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { IoArrowForward } from "react-icons/io5";
 export const About = () => {
   return (
     <section id="about" className={`section-wrapper`}>
@@ -51,6 +51,16 @@ export const About = () => {
                 Thanks for stopping by and getting to know a bit about me.
                 Here's to the adventures ahead!
               </p>
+            </Reveal>
+            <Reveal>
+              <div className={styles.diplomaLinkWrapper}>
+                <div className={styles.diplomaLink}>
+                  <span onClick={() => window.open("/Diplome.pdf")}>
+                    Check My Diploma
+                  </span>
+                  <IoArrowForward />
+                </div>
+              </div>
             </Reveal>
           </div>
         </div>

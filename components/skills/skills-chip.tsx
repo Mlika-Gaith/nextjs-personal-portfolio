@@ -9,6 +9,7 @@ import {
   BiLogoSpringBoot,
   BiLogoDocker,
   BiLogoGit,
+  BiLogoKubernetes,
 } from "react-icons/bi";
 import { Chip } from "@components/chips/chip";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -17,11 +18,8 @@ import {
   SiPostgresql,
   SiMongodb,
   SiExpress,
-  SiPytorch,
   SiTensorflow,
 } from "react-icons/si";
-import Image from "next/image";
-import HuggingFace from "@public/assets/huggingface.svg";
 import styles from "./skill-chip.module.css";
 
 export const SkillsChips = () => {
@@ -90,6 +88,10 @@ export const SkillsChips = () => {
               icon={<BiLogoGit size="2.6rem" color="#F05639" />}
               title="Git"
             />
+            <Chip
+              icon={<SiTensorflow size="2.2rem" color="#FF9200" />}
+              title="Tensorflow"
+            />
           </div>
         </div>
       </Reveal>
@@ -101,23 +103,8 @@ export const SkillsChips = () => {
           </h4>
           <div className={styles.skillChipGroup}>
             <Chip
-              icon={<SiTensorflow size="2.2rem" color="#FF9200" />}
-              title="Tensorflow"
-            />
-            <Chip
-              icon={<SiPytorch size="2.2rem" color="#EF5233" />}
-              title="Pytorch"
-            />
-            <Chip
-              icon={
-                <Image
-                  src={HuggingFace}
-                  alt="Hugging Face"
-                  height={26}
-                  width={26}
-                />
-              }
-              title="LayoutLMV3"
+              icon={<BiLogoKubernetes size="2.6rem" color="#3069de" />}
+              title="Kubernetes"
             />
           </div>
         </div>

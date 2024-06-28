@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState, FC, useRef, useEffect } from "react";
 import { PiSignatureThin } from "react-icons/pi";
 import { FaCertificate } from "react-icons/fa";
 import styles from "./certification-item.module.css";
 import Link from "next/link";
+import { useAnimation, useInView, motion } from "framer-motion";
 
 type Props = {
-  id: string;
   title: string;
   owner: string;
   description: string;
@@ -13,25 +13,41 @@ type Props = {
   link: string;
 };
 
-const CertificationItem = ({
-  id,
+const CertificationItem: FC<Props> = ({
   title,
   owner,
   description,
   date,
   link,
-}: Props) => {
+}) => {
   const [hovered, setHovered] = useState(false);
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [isInView, controls]);
   return (
-    <Link
-      key={id}
-      href={link}
-      target="_blank"
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate={controls}
+      transition={{ duration: 0.75 }}
       className={styles.certificationContainer}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div
+      <Link
+        href={link}
+        target="_blank"
         className={styles.certification}
         style={{
           transform: `translateY(${hovered ? "0%" : "30%"})`,
@@ -47,8 +63,8 @@ const CertificationItem = ({
             <FaCertificate className={styles.badge} />
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </motion.div>
   );
 };
 

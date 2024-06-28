@@ -28,7 +28,7 @@ import { RiOpenaiFill } from "react-icons/ri";
 export const projects = [
   {
     title: "Bike Store",
-    projectThumbnail: "/assets/img/projects/NotionClone.png",
+    projectThumbnail: "/assets/img/projects/BikeStore.png",
     projectRepoLink: "",
     projectLiveDemoLink: "",
     technologies: [

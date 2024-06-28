@@ -19,6 +19,16 @@
   @apply object-cover size-full rounded-full;
 }
 
+.diplomaLinkWrapper {
+  @apply flex items-center gap-6;
+}
+
+.diplomaLink {
+  @apply flex items-center gap-[0.8rem] cursor-pointer text-sm text-brand;
+}
+.diplomaLink:hover {
+  @apply underline underline-offset-4;
+}
 @media (max-width: 1024px) {
   .illustrationContainer {
     @apply w-[60%] mb-5;
