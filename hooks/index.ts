@@ -1,7 +1,4 @@
-import {useIntersectionObserver} from "./useIntersectionObserver";
-import {useScreenWidth} from "./useScreenWidth";
+import { useIntersectionObserver } from "./use-intersection-observer";
+import { useScreenWidth } from "./use-screen-width";
 
-export {
-    useIntersectionObserver,
-    useScreenWidth
-}
+export { useIntersectionObserver, useScreenWidth };

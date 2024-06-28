@@ -1,4 +1,4 @@
-import { Chip } from "@components/chips/Chip";
+import { Chip } from "@components/chips/chip";
 import { TbBrandNextjs } from "react-icons/tb";
 import {
   SiExpress,

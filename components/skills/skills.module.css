@@ -1,20 +1,15 @@
 .skills {
-  @apply grid gap-[2.4rem] grid-cols-custom-layout;
+  @apply grid gap-[2.4rem] grid-cols-1 lg:grid-cols-custom-layout;
 }
 
-.skillsText {
+.text {
   @apply mb-9 font-light text-pretty text-justify;
 }
 
-.links {
+.projectLinkWrapper {
   @apply flex items-center gap-6;
 }
-.linksText {
-  @apply flex items-center gap-[0.8rem] text-sm text-brand;
-}
 
-@media (max-width: 1024px) {
-  .skills {
-    @apply grid-cols-1;
-  }
+.projectLink {
+  @apply flex items-center gap-[0.8rem] text-sm text-brand;
 }

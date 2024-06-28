@@ -1,13 +1,14 @@
 import React from "react";
 import { SectionHeader } from "@utils";
-import CertificationItem from "./CertificationItem";
+import CertificationItem from "./certification-item";
+import styles from "./certification.module.css";
 type Props = {};
 
 const Certificates = (props: Props) => {
   return (
     <section className="section-wrapper" id="certificates">
       <SectionHeader title="Certifs" direction="right" />
-      <div className="size-full grid grid-cols-1 md:grid-cols-2 gap-[3.2rem] items-center">
+      <div className={styles.certifications}>
         <CertificationItem />
         <CertificationItem />
         <CertificationItem />

@@ -1,0 +1,9 @@
+.skillsLinks {
+  @apply flex items-center gap-4 px-4;
+}
+.skillLink {
+  @apply opacity-85 text-brand z-20 cursor-pointer;
+}
+.skillLink:hover {
+  @apply opacity-100 transition-all;
+}

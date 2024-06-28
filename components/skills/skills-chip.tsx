@@ -1,4 +1,3 @@
-import styles from "./skillsChips.module.css";
 import { Reveal } from "@utils";
 import { FaCode } from "@node_modules/react-icons/fa6";
 import {
@@ -11,31 +10,30 @@ import {
   BiLogoDocker,
   BiLogoGit,
 } from "react-icons/bi";
-import { Chip } from "@components/chips/Chip";
+import { Chip } from "@components/chips/chip";
 import { TbBrandNextjs } from "react-icons/tb";
 import {
   SiFastapi,
   SiPostgresql,
   SiMongodb,
-  SiFuturelearn,
   SiExpress,
   SiPytorch,
   SiTensorflow,
 } from "react-icons/si";
-import { AiOutlineRobot } from "react-icons/ai";
 import Image from "next/image";
 import HuggingFace from "@public/assets/huggingface.svg";
+import styles from "./skill-chip.module.css";
 
 export const SkillsChips = () => {
   return (
-    <div className={styles.skillsChips}>
+    <div className="relative">
       <Reveal>
-        <div className={styles.chipsColumn}>
-          <h4 className={styles.chipColumnTitleWrapper}>
+        <div>
+          <h4 className={styles.skillChipsWrapper}>
             <FaCode size="2.8rem" color="#A4161A" />
-            <span className={styles.chipColumnTitle}>Technologies I Use</span>
+            <span className={styles.skillChipTitle}>Technologies I Use</span>
           </h4>
-          <div className={styles.chipsGrid}>
+          <div className={styles.skillChipGroup}>
             <Chip
               icon={<BiLogoJavascript size="2.6rem" color="#F7DF1E" />}
               title="Javascript"
@@ -96,12 +94,12 @@ export const SkillsChips = () => {
         </div>
       </Reveal>
       <Reveal>
-        <div className={styles.chipsColumn}>
-          <h4 className={styles.chipColumnTitleWrapper}>
+        <div>
+          <h4 className={styles.skillChipsWrapper}>
             <FaCode size="2.8rem" color="#A4161A" />
-            <span className={styles.chipColumnTitle}>Currently Learning</span>
+            <span className={styles.skillChipTitle}>Currently Learning</span>
           </h4>
-          <div className={styles.chipsGrid}>
+          <div className={styles.skillChipGroup}>
             <Chip
               icon={<SiTensorflow size="2.2rem" color="#FF9200" />}
               title="Tensorflow"

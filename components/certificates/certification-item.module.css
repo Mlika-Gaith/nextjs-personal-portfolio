@@ -1,0 +1,31 @@
+.certificationContainer {
+  @apply w-full bg-background-light cursor-pointer relative aspect-[16/9] rounded-xl overflow-hidden flex justify-center items-center;
+}
+.certification {
+  @apply w-[85%] h-full border border-solid border-brand shadow-xl rounded-md p-4 bg-background-dark absolute bottom-0 translate-y-[30%] transition-all duration-300;
+}
+.certificationBody {
+  @apply size-full bg-background-dark border gap-y-4 border-solid border-brand z-10 flex flex-col items-center justify-start p-4;
+}
+.title {
+  @apply text-[1.5rem] lg:text-[2.5rem] text-center font-rochester lg:my-2;
+}
+.owner {
+  @apply underline underline-offset-2 text-brand text-[2rem] lg:text-lg font-extralight capitalize font-rochester;
+}
+.description {
+  @apply w-full whitespace-normal text-[0.8rem] lg:text-sm text-center -mb-[0.5rem] lg:mb-[1rem]  font-poppins font-extralight justify-self-center;
+}
+
+.certificationFooter {
+  @apply relative size-full flex justify-between items-center pb-4;
+}
+.date {
+  @apply text-[0.8rem] lg:text-sm font-extralight font-rochester;
+}
+.signature {
+  @apply absolute w-[20px] h-[20px] lg:w-[40px] lg:h-[40px] right-[12%] top-0 text-brand -rotate-45;
+}
+.badge {
+  @apply absolute w-[20px] h-[20px] lg:w-[40px] lg:h-[40px] right-[1%] top-0 text-brand -rotate-45;
+}

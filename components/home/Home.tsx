@@ -1,13 +1,13 @@
 "use client";
 import styles from "./home.module.css";
 import { SideBar, HeadBar } from "@components/nav";
-import { Hero } from "@components/heroSection/Hero";
-import { About } from "@components/about/About";
-import { Skills } from "@components/skills/Skills";
-import { Projects } from "@components/projects/Projects";
-import { Experience } from "@components/experience/Experience";
-import { Contact } from "@components/contact/Contact";
-import Certificates from "@components/certificates/Certificates";
+import { Hero } from "@components/heroSection/hero";
+import { About } from "@components/about/about";
+import { Skills } from "@components/skills/skills";
+import { Projects } from "@components/projects/projects";
+import { Experience } from "@components/experience/experience";
+import { Contact } from "@components/contact/contact";
+import Certificates from "@components/certificates/certifications";
 
 export const Home = () => {
   return (

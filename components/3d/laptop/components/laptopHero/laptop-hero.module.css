@@ -1,5 +1,5 @@
 .heroContainer {
-  @apply text-default bg-background w-full h-[339px];
+  @apply text-default bg-background w-full h-[325px];
 }
 
 .heroWrapper {
@@ -33,4 +33,16 @@
 }
 .heroBtn1:hover {
   @apply transition-colors bg-brand text-default;
+}
+
+@media (min-width: 1400px) {
+  .heroContainer {
+    @apply h-[339px];
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroContainer {
+    @apply h-[332px];
+  }
 }

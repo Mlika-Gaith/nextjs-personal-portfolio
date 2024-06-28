@@ -1,5 +1,5 @@
 import { FC, MouseEventHandler, ReactNode } from "react";
-import styles from "./outlineBtn.module.css";
+import styles from "./outline-button.module.css";
 import { BsFiletypePdf } from "react-icons/bs";
 
 type Props = {

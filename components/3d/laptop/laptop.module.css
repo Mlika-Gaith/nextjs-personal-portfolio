@@ -14,14 +14,14 @@
   @apply w-[200px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
 }
 .wrapper {
-  @apply absolute w-[644px] h-[226px];
+  @apply absolute w-[655px] h-[190px];
   transform: scale(0.5);
   transform-origin: top left;
 }
 
 @media (min-width: 1400px) {
   .wrapper {
-    @apply absolute w-[668px];
+    @apply w-[660px];
   }
 }
 

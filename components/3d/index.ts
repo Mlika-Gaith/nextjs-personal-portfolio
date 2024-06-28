@@ -1,4 +1,2 @@
-import Scene from "./laptop/Laptop"
-export {
-    Scene
-}
+import Scene from "./laptop/laptop";
+export { Scene };

@@ -1,4 +1,4 @@
-import {Reveal} from "./Reveal";
-import {SectionHeader} from "./SectionHeader";
+import { Reveal } from "./reveal";
+import { SectionHeader } from "./section-header";
 
-export {Reveal, SectionHeader}
+export { Reveal, SectionHeader };

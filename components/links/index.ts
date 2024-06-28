@@ -1,7 +1,4 @@
-import {Links} from "./Links"
-import {SkillsLinks} from "./SkillsLinks";
+import { Links } from "./links";
+import { SkillsLinks } from "./skills-links";
 
-export {
-    Links,
-    SkillsLinks
-}
+export { Links, SkillsLinks };

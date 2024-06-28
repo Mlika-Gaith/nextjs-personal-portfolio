@@ -1,4 +1,4 @@
-import styles from "./laptopHero.module.css";
+import styles from "./laptop-hero.module.css";
 import { useState } from "react";
 
 const hero = {

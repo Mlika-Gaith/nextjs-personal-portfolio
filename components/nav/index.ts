@@ -1,7 +1,4 @@
-import {SideBar} from "@components/nav/SideBar";
-import {HeadBar} from "@components/nav/HeadBar";
+import { SideBar } from "@components/nav/sidebar";
+import { HeadBar } from "@components/nav/headbar";
 
-export {
-    SideBar,
-    HeadBar
-}
+export { SideBar, HeadBar };

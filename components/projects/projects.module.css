@@ -1,10 +1,9 @@
-.projects{
-    @apply grid grid-cols-2 gap-[3.2rem];
+.projects {
+  @apply grid grid-cols-2 gap-[3.2rem];
 }
 
-@media(max-width:1024px){
-    .projects{
-        @apply grid-cols-1;
-    }
-
+@media (max-width: 1024px) {
+  .projects {
+    @apply grid-cols-1;
+  }
 }

@@ -1,7 +1,4 @@
-import {OutlineBtn} from "./OutlineBtn"
-import {Button} from "./Button";
+import { OutlineBtn } from "./outline-button";
+import { Button } from "./button";
 
-export {
-    OutlineBtn,
-    Button
-}
+export { OutlineBtn, Button };
