@@ -146,6 +146,7 @@ const Model: FC<Props> = ({ open, hinge, ...props }) => {
 export default function Scene() {
   // This flag controls open state, alternates between true & false
   const [open, setOpen] = useState(false);
+  const screenWidth = useScreenWidth();
   // We turn this into a spring animation that interpolates between 0 and 1
   const props = useSpring({ open: Number(open) });
   return (
@@ -153,14 +154,24 @@ export default function Scene() {
       style={{
         height: "100%",
         width: "100%",
-        background: props.open.to([0, 1], ["#A4161A", "#d90429"]),
+        borderRadius: "0.9rem",
+        background: props.open.to([0, 1], ["#1f2022", "#bdc8a6"]),
       }}
     >
       <web.h1
         style={{
           opacity: props.open.to([0, 1], [1, 0]),
           transform: props.open.to(
-            (o) => `translate3d(-50%,${o * 50 - 100}px,0)`
+            (o) =>
+              `translate3d(${
+                screenWidth < 786
+                  ? "-45%"
+                  : screenWidth < 1024
+                  ? "-40%"
+                  : screenWidth < 1400
+                  ? "-60%"
+                  : "75%"
+              },${o * 50 - 100}px,0)`
           ),
         }}
         className={styles.laptopH}
@@ -172,11 +183,7 @@ export default function Scene() {
         camera={{ position: [0, 0, -30], fov: 35 }}
         className={styles.canvas}
       >
-        <three.pointLight
-          position={[10, 10, 10]}
-          intensity={1.5}
-          color={props.open.to([0, 1], ["#A4161A", "#d90429"])}
-        />
+        <three.pointLight position={[10, 10, 10]} intensity={1.5} />
         <group
           rotation={[0, Math.PI, 0]}
           onClick={(e) => (e.stopPropagation(), setOpen(!open))}

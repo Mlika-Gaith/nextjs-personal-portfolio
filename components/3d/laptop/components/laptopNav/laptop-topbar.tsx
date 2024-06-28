@@ -40,6 +40,13 @@ export const LaptopTopBar: FC<Props> = ({ isOpen, toggle }) => {
           </a>
           <a
             className={styles.link}
+            href="#certificates"
+            onClick={() => setSelected("certificates")}
+          >
+            Certifications
+          </a>
+          <a
+            className={styles.link}
             href="#experience"
             onClick={() => setSelected("experience")}
           >

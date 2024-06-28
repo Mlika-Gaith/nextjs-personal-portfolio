@@ -1,68 +1,81 @@
-.hero{
-    /* add bg effect */
-    @apply mt-[4rem] mb-[10rem] py-[4rem] px-10;
+.hero {
+  /* add bg effect */
+  @apply mt-[2rem] mb-[10rem] py-[4rem] px-4;
 }
 
-.heroGrid{
-    @apply gap-4 flex flex-nowrap flex-row items-center justify-between;
+.heroGrid {
+  @apply gap-12 flex flex-row items-center justify-center;
 }
 
-.textContainer{
-    @apply relative z-10 h-fit w-fit my-[4.8rem] mx-0 self-start;
+.textContainer {
+  @apply relative h-fit w-fit my-[4.8rem] mx-0 self-start;
 }
 
-.title{
-    @apply font-black text-2xl leading-3 py-[3rem] mt-2;
+.title {
+  @apply font-medium text-brand font-bogart text-2xl leading-6 py-[4rem] mt-2;
 }
 
-.titleDot{
-    @apply font-black text-2xl leading-3 text-brand;
+.titleDot {
+  @apply font-black text-2xl leading-3 text-brand-tint;
 }
 
-.subTitle{
-    @apply text-lg leading-[1.1rem] mt-[1.6rem] font-light py-3 pb-[2rem];
+.subTitle {
+  @apply text-lg font-black leading-[1.1rem] mt-[1.6rem] font-bogart text-brand-secondary pt-3;
 }
 
-.about{
-    @apply my-4 mx-0 max-w-[750px] font-light text-justify;
+.subTitleLine {
+  @apply w-full h-[40px] -mb-4;
 }
 
-.objectContainer{
-    @apply w-full h-[50vh] flex items-center;
+.about {
+  @apply mb-8 mx-0 max-w-[750px] font-medium text-brand/80 font-bogart text-justify;
 }
 
-@media (max-width: 1024px){
-    .hero{
-        @apply py-0 px-8 mt-6 mb-[4.8rem];
-    }
-    .title{
-        @apply text-xl;
-    }
-    .titleDot{
-        @apply text-xl;
-    }
-    .heroGrid{
-        @apply relative flex-col-reverse items-start flex-wrap;
-    }
+.objectContainer {
+  @apply w-full h-[60vh] flex items-center justify-center;
 }
 
-@media(max-width: 786px){
-    .title{
-        @apply text-[4.8rem];
-    }
-    .titleDot{
-        @apply text-lg;
-    }
-    .objectContainer{
-        @apply w-[95%]
-    }
-    .subTitle{
-        @apply text-[3rem] leading-[1.5rem];
-    }
+@media (max-width: 1024px) {
+  .hero {
+    @apply py-0 px-8 mt-6 mb-[4.8rem];
+  }
+  .title {
+    @apply text-xl;
+  }
+  .titleDot {
+    @apply text-xl;
+  }
+  .heroGrid {
+    @apply gap-6 relative flex-col-reverse items-start flex-wrap;
+  }
+  .objectContainer {
+    @apply h-[40vh];
+  }
 }
 
-@media(max-width: 486px){
-    .subTitle{
-        @apply text-[2.8rem] leading-[1.1rem] mt-0;
-    }
+@media (max-width: 786px) {
+  .title {
+    @apply text-[4.8rem];
+  }
+  .titleDot {
+    @apply text-lg;
+  }
+  .objectContainer {
+    @apply w-[98%];
+  }
+  .subTitle {
+    @apply text-[3rem] leading-[1.5rem];
+  }
+}
+
+@media (max-width: 486px) {
+  .heroGrid {
+    @apply gap-6;
+  }
+  .subTitle {
+    @apply text-[2.5rem] leading-[1.1rem] mt-0;
+  }
+  .objectContainer {
+    @apply w-[98%] h-[40vh];
+  }
 }

@@ -2,12 +2,12 @@
   @apply size-full box-border;
 }
 .laptopH {
-  @apply m-0 p-0 absolute top-[45%] left-[70%] font-black text-2xl
+  @apply m-0 p-0 absolute top-[45%] left-[40%] font-black font-bogart text-2xl
         tracking-wide capitalize whitespace-nowrap;
   transform: translate3d(-50%, -50%, 0);
 }
 .laptopHDot {
-  @apply text-background;
+  @apply text-brand-tint;
 }
 
 .content {
@@ -21,7 +21,7 @@
 
 @media (min-width: 1400px) {
   .wrapper {
-    @apply w-[660px];
+    @apply w-[650px];
   }
 }
 
@@ -32,6 +32,15 @@
 }
 
 @media (max-width: 1024px) {
+  .laptopH {
+    @apply text-2xl top-[24%] left-[48%];
+  }
+  .wrapper {
+    @apply w-[675px];
+  }
+}
+
+@media (max-width: 786px) {
   .laptopH {
     @apply text-xl top-[24%] left-[48%];
   }

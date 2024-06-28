@@ -1,18 +1,18 @@
 .heroContainer {
-  @apply text-default bg-background w-full h-[325px];
+  @apply text-brand bg-background w-full h-[320px];
 }
 
 .heroWrapper {
-  @apply flex flex-col z-[1] w-full mx-auto py-5 px-4 items-center justify-center;
+  @apply flex flex-col z-[1] w-full mx-auto py-5 px-4 items-center justify-center text-center;
 }
 .topLine {
-  @apply text-[2.3rem] text-default leading-3 font-medium tracking-wider uppercase my-5;
+  @apply text-[2.3rem] text-brand leading-3 font-medium tracking-wider uppercase my-5;
 }
 .heading {
   @apply text-md leading-5 font-extrabold text-brand my-6;
 }
 .subtitle {
-  @apply text-[2rem] leading-10 text-default mb-4 max-w-[70%] text-wrap font-light;
+  @apply text-[2rem] leading-10 text-brand mb-4 max-w-[70%] text-wrap font-light;
 }
 .heroBtnWrap {
   @apply flex items-center justify-around mt-7;
@@ -26,7 +26,7 @@
   @apply bg-transparent text-brand border-brand border-2;
 }
 .heroBtn2 {
-  @apply bg-brand;
+  @apply bg-brand text-default;
 }
 .heroBtn2:hover {
   @apply transition-colors opacity-80 bg-background-secondary text-brand;
