@@ -1,26 +1,26 @@
-.expItem{
-    @apply mb-[2.4rem] py-8 px-[1.2rem] border-b border-background-light;
+.expItem {
+  @apply mb-[2.4rem] py-8 px-[1.2rem] border-b border-background-secondary;
 }
-.heading{
-    @apply flex items-center justify-between mb-[1.2rem];
+.heading {
+  @apply flex items-center justify-between mb-[1.2rem];
 }
-.title{
-    @apply text-md font-bold;
+.title {
+  @apply text-md font-bold;
 }
-.company{
-    @apply text-brand font-bold;
+.company {
+  @apply text-brand font-bold;
 }
-.description{
-    @apply mb-[1.8rem] font-extralight;
+.description {
+  @apply mb-[1.8rem] font-extralight;
 }
-.technologies{
-    @apply flex flex-wrap gap-[1.2rem];
+.technologies {
+  @apply flex flex-wrap gap-[1.2rem];
 }
-@media (max-width: 1024px){
-    .heading{
-        @apply items-start;
-    }
-    .expItem{
-        @apply px-0;
-    }
+@media (max-width: 1024px) {
+  .heading {
+    @apply items-start;
+  }
+  .expItem {
+    @apply px-0;
+  }
 }

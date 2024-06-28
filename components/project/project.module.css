@@ -1,5 +1,5 @@
 .project {
-  @apply w-full bg-background-light cursor-pointer relative aspect-[16/9] rounded-xl overflow-hidden;
+  @apply w-full bg-background-secondary cursor-pointer relative aspect-[16/9] rounded-xl overflow-hidden;
 }
 
 .projectImage {

@@ -17,11 +17,13 @@ const config: Config = {
       },
       colors: {
         default: "rgb(235,236,243)",
-        brand: "#A4161A",
-        background: "rgb(17,17,17)",
-        "bg-opaque": "rgb(17,17,17,0.25)",
-        "background-light": "rgb(35,35,35)",
+        brand: "#1f2022",
+        "brand-secondary": "#0f0d0a",
+        "brand-tertiary": "#615a60",
+        background: "#fefaf4",
+        "background-secondary": "#ede8e1",
         "background-dark": "rgb(8,8,8)",
+        "background-dark-secondary": "rgb(35,35,35)",
       },
       fontSize: {
         xs: "1.6rem",
@@ -32,8 +34,8 @@ const config: Config = {
         "2xl": "9.6rem",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        rochester: ["Rochester", "cursive"],
+        bogart: "Bogart",
+        futura: "Futura",
       },
       gridTemplateColumns: {
         "custom-layout": "1fr 350px",

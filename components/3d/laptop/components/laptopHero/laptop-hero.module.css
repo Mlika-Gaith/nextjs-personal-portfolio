@@ -29,7 +29,7 @@
   @apply bg-brand;
 }
 .heroBtn2:hover {
-  @apply transition-colors opacity-80 bg-background-light text-brand;
+  @apply transition-colors opacity-80 bg-background-secondary text-brand;
 }
 .heroBtn1:hover {
   @apply transition-colors bg-brand text-default;
