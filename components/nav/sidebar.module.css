@@ -5,7 +5,7 @@
 
 .logo {
   @apply cursor-pointer flex-shrink-0 text-md font-black leading-4 w-[50px] h-[48px]
-    flex items-center justify-center bg-background rounded my-[1.8rem] mx-1;
+    flex items-center justify-center bg-brand-tint text-brand rounded my-[1.8rem] mx-1;
 }
 
 .logoDot {
@@ -24,7 +24,7 @@
 }
 
 .navigationLink:hover {
-  @apply bg-background border-r-2 border-brand opacity-100;
+  @apply bg-brand border-r-2 border-brand opacity-100;
 }
 
 .selected {

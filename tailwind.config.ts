@@ -18,6 +18,7 @@ const config: Config = {
       colors: {
         default: "rgb(235,236,243)",
         brand: "#1f2022",
+        "brand-tint": "#bdc8a6",
         "brand-secondary": "#0f0d0a",
         "brand-tertiary": "#615a60",
         background: "#fefaf4",
