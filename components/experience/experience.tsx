@@ -1,5 +1,5 @@
 import { SectionHeader } from "@utils";
-import { experiences } from "./experienceData";
+import { experiences } from "@constants/experiences";
 import { ExpItem } from "@components/experience/experience-item";
 
 export const Experience = () => {

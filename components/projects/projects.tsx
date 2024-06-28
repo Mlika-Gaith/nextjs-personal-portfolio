@@ -1,7 +1,7 @@
 import { SectionHeader } from "@utils";
 import styles from "./projects.module.css";
 import { Project } from "@components/project/project";
-import { projects } from "./projectsData";
+import { projects } from "@constants/projects";
 export const Projects = () => {
   return (
     <section className="section-wrapper" id="projects">
