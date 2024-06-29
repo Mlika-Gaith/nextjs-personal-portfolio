@@ -3,7 +3,7 @@
 }
 
 .text {
-  @apply mb-9 font-light text-pretty text-justify;
+  @apply mb-9 font-light font-bogart text-brand/80 text-pretty text-justify;
 }
 
 .projectLinkWrapper {
@@ -11,5 +11,5 @@
 }
 
 .projectLink {
-  @apply flex items-center gap-[0.8rem] text-sm text-brand;
+  @apply flex items-center justify-center gap-4 font-bogart font-medium underline underline-offset-4 cursor-pointer text-sm text-brand;
 }
