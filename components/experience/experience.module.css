@@ -1,17 +1,29 @@
 .expItem {
-  @apply mb-[2.4rem] py-8 px-[1.2rem] border-b border-background-secondary;
+  @apply mb-[2.4rem] py-8 px-[1.2rem] border-b border-brand-tertiary pb-12;
+}
+.expItem:last-child {
+  @apply border-none;
 }
 .heading {
   @apply flex items-center justify-between mb-[1.2rem];
 }
 .title {
-  @apply text-md font-bold;
+  @apply text-md font-bold font-bogart-italic text-brand;
 }
 .company {
-  @apply text-brand font-bold;
+  @apply text-brand/80 font-bold;
+}
+.line {
+  @apply w-full h-[25px];
 }
 .description {
-  @apply mb-[1.8rem] font-extralight;
+  @apply mb-[1.8rem] text-brand/80 font-futura-book text-xs;
+}
+.date {
+  @apply text-brand/80 font-futura text-sm font-bold;
+}
+.location {
+  @apply text-brand/80 font-bogart-italic text-sm;
 }
 .technologies {
   @apply flex flex-wrap gap-[1.2rem];

@@ -37,6 +37,5 @@
   @apply text-xs font-futura-book text-brand/80;
 }
 .projectLearnMore {
-  @apply inline-block text-xs font-normal text-brand
-    cursor-pointer mt-[2rem] hover:decoration-1 hover:underline hover:underline-offset-4;
+  @apply flex items-center mt-[2rem] gap-[0.8rem] font-bogart font-medium underline underline-offset-4 cursor-pointer text-sm text-brand;
 }

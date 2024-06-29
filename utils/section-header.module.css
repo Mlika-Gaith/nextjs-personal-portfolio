@@ -16,6 +16,9 @@
   .sectionHeader {
     @apply w-full gap-8;
   }
+  .title {
+    @apply text-lg;
+  }
   .titleDot {
     @apply text-xl;
   }
