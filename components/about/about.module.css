@@ -9,14 +9,18 @@
 .textContainer {
   @apply relative h-fit w-fit self-start mt-5;
 }
+.aboutBigText {
+  @apply mb-9 font-bogart-italic text-[2.5rem] text-brand/80 text-pretty;
+}
+
 .aboutText {
-  @apply mb-9 font-light text-pretty text-justify;
+  @apply mb-9 font-futura-book font-normal text-brand/80 text-pretty text-justify;
 }
 .illustrationContainer {
   @apply relative w-[80%] flex justify-center items-center p-8 z-10;
 }
 .illustration {
-  @apply object-cover size-full rounded-full;
+  @apply object-cover size-full rounded-[0.9rem] lg:-rotate-90;
 }
 
 .diplomaLinkWrapper {
@@ -24,14 +28,15 @@
 }
 
 .diplomaLink {
-  @apply flex items-center gap-[0.8rem] cursor-pointer text-sm text-brand;
+  @apply flex items-center gap-[0.8rem] font-bogart font-medium underline underline-offset-4 cursor-pointer text-sm text-brand;
 }
-.diplomaLink:hover {
-  @apply underline underline-offset-4;
-}
+
 @media (max-width: 1024px) {
   .illustrationContainer {
-    @apply w-[60%] mb-5;
+    @apply w-full h-[550px] mb-5;
+  }
+  .illustration {
+    @apply object-cover scale-[0.9];
   }
   .about {
     @apply py-0 px-0 mt-[0.5rem];

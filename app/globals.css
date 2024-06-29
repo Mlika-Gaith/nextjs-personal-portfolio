@@ -4,21 +4,28 @@
 
 @font-face {
   font-family: "Bogart";
-  src: url("../fonts/bogart/Bogart-Medium.ttf") format("ttf");
+  src: url("../fonts/bogart/Bogart-Medium.ttf") format("truetype");
   font-weight: medium;
   font-style: medium;
 }
 
 @font-face {
-  font-family: "Futura";
-  src: url("../fonts/futura/Futura-Book.ttf") format("ttf");
+  font-family: "Bogart Italic";
+  src: url("../fonts/bogart/Bogart-Medium-Italic.ttf") format("truetype");
+  font-weight: medium;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("../fonts/futura/Futura-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Futura";
-  src: url("../fonts/futura/Futura-Heavy.ttf") format("ttf");
+  src: url("../fonts/futura/Futura-Heavy.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }

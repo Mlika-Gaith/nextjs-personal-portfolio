@@ -20,7 +20,7 @@
 }
 
 .subTitle {
-  @apply text-lg font-black leading-[1.1rem] mt-[1.6rem] font-bogart text-brand-secondary pt-3;
+  @apply text-lg font-bogart-italic leading-[1.1rem] mt-[1.6rem] text-brand-secondary pt-3;
 }
 
 .subTitleLine {

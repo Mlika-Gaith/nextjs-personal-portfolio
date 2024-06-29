@@ -37,7 +37,9 @@ const config: Config = {
       },
       fontFamily: {
         bogart: "Bogart",
+        "bogart-italic": "Bogart Italic",
         futura: "Futura",
+        "futura-book": "Futura Book",
       },
       gridTemplateColumns: {
         "custom-layout": "1fr 350px",

@@ -32,16 +32,15 @@ export const Hero = () => {
               src="/assets/svg/line.svg"
               width={50}
               height={50}
-              alt="arrow"
+              alt="line"
               className={styles.subTitleLine}
             />
           </Reveal>
           <Reveal>
             <p className={styles.about}>
-              Nice to meet you ! I am a dedicated software engineer passionate
-              about blending creativity with functionality. Interested in web
-              development and machine learning, I am always eager to learn new
-              technologies. Let's connect and explore the possibilities !
+              Hi there! I'm Ghaith Mlika from Tunisia, a software developer who
+              once tried to count all the bugs in my code but lost track after
+              discovering they had formed a union.
             </p>
           </Reveal>
           <Reveal>

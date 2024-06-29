@@ -28,5 +28,5 @@
 }
 
 .selected {
-  @apply bg-background border-r-2 border-brand opacity-100;
+  @apply bg-brand-tertiary text-brand border-r-2 border-brand opacity-100;
 }
