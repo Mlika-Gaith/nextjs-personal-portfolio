@@ -15,26 +15,28 @@
 }
 
 .projectTitle {
-  @apply font-bold text-md flex-shrink-0;
+  @apply font-bold font-bogart-italic text-brand text-md flex-shrink-0;
 }
 
 .projectTitleLine {
-  @apply w-full bg-default h-[1px] opacity-40;
+  @apply w-full bg-background-secondary h-[1px] opacity-80;
 }
 
 .projectRepoLink {
-  @apply opacity-75 transition-opacity duration-200 text-brand hover:opacity-100;
+  @apply opacity-80 transition-opacity duration-200 text-brand-pink hover:opacity-100;
 }
 
 .projectLiveLink {
-  @apply opacity-75 transition-opacity duration-200 text-brand hover:opacity-100;
+  @apply opacity-80 transition-opacity duration-200 text-brand-pink hover:opacity-100;
 }
 
 .projectTechnologies {
-  @apply flex flex-wrap gap-[1.2rem] text-xs text-brand my-[0.8rem] mx-0;
+  @apply flex flex-wrap gap-[1.2rem] text-xs text-brand/80 font-futura font-medium my-[0.8rem] mx-0;
 }
-
+.projectDescription {
+  @apply text-xs font-futura-book text-brand/80;
+}
 .projectLearnMore {
   @apply inline-block text-xs font-normal text-brand
-    cursor-pointer mt-[2.5rem] hover:decoration-1 hover:underline hover:underline-offset-4;
+    cursor-pointer mt-[2rem] hover:decoration-1 hover:underline hover:underline-offset-4;
 }

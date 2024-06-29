@@ -112,7 +112,7 @@ export const Project: FC<Props> = ({
           </Reveal>
 
           <Reveal>
-            <p className="font-light">
+            <p className={styles.projectDescription}>
               {description} <br />
               <span
                 onClick={() => setIsOpen(true)}

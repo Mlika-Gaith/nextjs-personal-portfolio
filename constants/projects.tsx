@@ -9,8 +9,6 @@ import {
   SiKeras,
   SiTensorflow,
   SiNodedotjs,
-  SiTypescript,
-  SiJavascript,
   SiVite,
   SiSpringboot,
   SiApachekafka,
@@ -21,8 +19,11 @@ import {
   BiLogoNodejs,
   BiLogoJava,
   BiLogoSpringBoot,
+  BiLogoTypescript,
+  BiLogoJavascript,
 } from "react-icons/bi";
 import { FaCcStripe, FaPython } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
 import { RiOpenaiFill } from "react-icons/ri";
 
 export const projects = [
@@ -42,35 +43,14 @@ export const projects = [
       "Postgresql",
     ],
     techChips: [
-      <Chip
-        icon={<TbBrandNextjs size="2.6rem" color="#000000" />}
-        title="Next.js"
-      />,
-      <Chip
-        icon={<SiTypescript size="2.4rem" color="#2f74c0" />}
-        title="Typescript"
-      />,
-      <Chip
-        icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
-        title="Tailwind CSS"
-      />,
-      <Chip icon={<BiLogoJava size="2.6rem" color="#f0931c" />} title="Java" />,
-      <Chip
-        icon={<BiLogoSpringBoot size="2.6rem" color="#69ad3c" />}
-        title="Spring Cloud"
-      />,
-      <Chip
-        icon={<SiSpringboot size="2.6rem" color="#69ad3c" />}
-        title="Spring Boot"
-      />,
-      <Chip
-        icon={<SiApachekafka size="2.6rem" color="#000" />}
-        title="Apache Kafka"
-      />,
-      <Chip
-        icon={<SiPostgresql size="2.2rem" color="#336791" />}
-        title="PostgreSQL"
-      />,
+      <Chip icon={<TbBrandNextjs size="2.6rem" />} title="Next.js" />,
+      <Chip icon={<BiLogoTypescript size="2.6rem" />} title="Typescript" />,
+      <Chip icon={<SiTailwindcss size="2.4rem" />} title="Tailwind CSS" />,
+      <Chip icon={<BiLogoJava size="2.6rem" />} title="Java" />,
+      <Chip icon={<BiLogoSpringBoot size="2.6rem" />} title="Spring Cloud" />,
+      <Chip icon={<SiSpringboot size="2.4rem" />} title="Spring Boot" />,
+      <Chip icon={<SiApachekafka size="2.4rem" />} title="Apache Kafka" />,
+      <Chip icon={<SiPostgresql size="2.4rem" />} title="PostgreSQL" />,
     ],
     description:
       "I am currently working on a full stack e-commerce app called Bike Store.",
@@ -102,26 +82,11 @@ export const projects = [
       "MongoDB",
     ],
     techChips: [
-      <Chip
-        icon={<TbBrandNextjs size="2.6rem" color="#000000" />}
-        title="Next.js"
-      />,
-      <Chip
-        icon={<SiTypescript size="2.6rem" color="#2f74c0" />}
-        title="Typescript"
-      />,
-      <Chip
-        icon={<SiNodedotjs size="2.6rem" color="#7fc728" />}
-        title="Node.js"
-      />,
-      <Chip
-        icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
-        title="Tailwind CSS"
-      />,
-      <Chip
-        icon={<SiMongodb size="2.2rem" color="#199555" />}
-        title="MongoDB"
-      />,
+      <Chip icon={<TbBrandNextjs size="2.6rem" />} title="Next.js" />,
+      <Chip icon={<BiLogoTypescript size="2.6rem" />} title="Typescript" />,
+      <Chip icon={<SiNodedotjs size="2.4rem" />} title="Node.js" />,
+      <Chip icon={<SiTailwindcss size="2.4rem" />} title="Tailwind CSS" />,
+      <Chip icon={<SiMongodb size="2.4rem" />} title="MongoDB" />,
     ],
     description: "Notion-inspired note-taking app.",
     modalContent: (
@@ -153,26 +118,11 @@ export const projects = [
       "MongoDB",
     ],
     techChips: [
-      <Chip
-        icon={<TbBrandNextjs size="2.6rem" color="#000000" />}
-        title="Next.js"
-      />,
-      <Chip
-        icon={<SiJavascript size="2.6rem" color="#efd81d" />}
-        title="Javascript"
-      />,
-      <Chip
-        icon={<SiNodedotjs size="2.6rem" color="#7fc728" />}
-        title="Node.js"
-      />,
-      <Chip
-        icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
-        title="Tailwind CSS"
-      />,
-      <Chip
-        icon={<SiMongodb size="2.2rem" color="#199555" />}
-        title="MongoDB"
-      />,
+      <Chip icon={<TbBrandNextjs size="2.6rem" />} title="Next.js" />,
+      <Chip icon={<BiLogoJavascript size="2.6rem" />} title="Javascript" />,
+      <Chip icon={<SiNodedotjs size="2.4rem" />} title="Node.js" />,
+      <Chip icon={<SiTailwindcss size="2.4rem" />} title="Tailwind CSS" />,
+      <Chip icon={<SiMongodb size="2.4rem" />} title="MongoDB" />,
     ],
     description: "An intuitive app for creating and sharing AI prompts.",
     modalContent: (
@@ -202,34 +152,13 @@ export const projects = [
       "Open AI",
     ],
     techChips: [
-      <Chip
-        icon={<TbBrandNextjs size="2.6rem" color="#000000" />}
-        title="Next.js"
-      />,
-      <Chip
-        icon={<SiTypescript size="2.6rem" color="#2f74c0" />}
-        title="Typescript"
-      />,
-      <Chip
-        icon={<SiNodedotjs size="2.6rem" color="#7fc728" />}
-        title="Node.js"
-      />,
-      <Chip
-        icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
-        title="Tailwind CSS"
-      />,
-      <Chip
-        icon={<SiMongodb size="2.2rem" color="#199555" />}
-        title="MongoDB"
-      />,
-      <Chip
-        icon={<FaCcStripe size="2.2rem" color="#635BFF" />}
-        title="Stripe"
-      />,
-      <Chip
-        icon={<RiOpenaiFill size="2.2rem" color="#fff" />}
-        title="Open AI"
-      />,
+      <Chip icon={<TbBrandNextjs size="2.6rem" />} title="Next.js" />,
+      <Chip icon={<BiLogoTypescript size="2.6rem" />} title="Typescript" />,
+      <Chip icon={<SiNodedotjs size="2.4rem" />} title="Node.js" />,
+      <Chip icon={<SiTailwindcss size="2.4rem" />} title="Tailwind CSS" />,
+      <Chip icon={<SiMongodb size="2.4rem" />} title="MongoDB" />,
+      <Chip icon={<FaCcStripe size="2.2rem" />} title="Stripe" />,
+      <Chip icon={<RiOpenaiFill size="2.2rem" />} title="Open AI" />,
     ],
     description:
       "An easy to use app to generate survey forms in seconds leveraging the power of AI.",
@@ -256,19 +185,10 @@ export const projects = [
     projectLiveDemoLink: "https://main--nexus-react-modern-ui.netlify.app/",
     technologies: ["Vite", "React.js", "Typescript", "Tailwind CSS"],
     techChips: [
-      <Chip icon={<SiVite size="2.6rem" color="#8f64f6" />} title="Vite" />,
-      <Chip
-        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
-        title="React.js"
-      />,
-      <Chip
-        icon={<SiTypescript size="2.6rem" color="#2f74c0" />}
-        title="Typescript"
-      />,
-      <Chip
-        icon={<SiTailwindcss size="2.6rem" color="#38BDF8" />}
-        title="Tailwind CSS"
-      />,
+      <Chip icon={<SiVite size="2.4rem" />} title="Vite" />,
+      <Chip icon={<BiLogoReact size="2.6rem" />} title="React.js" />,
+      <Chip icon={<BiLogoTypescript size="2.6rem" />} title="Typescript" />,
+      <Chip icon={<SiTailwindcss size="2.4rem" />} title="Tailwind CSS" />,
     ],
     description: "An intuitive UI/UX Design for an AI App.",
     modalContent: (
@@ -297,26 +217,11 @@ export const projects = [
       "MongoDB",
     ],
     techChips: [
-      <Chip
-        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
-        title="React.js"
-      />,
-      <Chip
-        icon={<SiExpress size="2.6rem" color="#fff" />}
-        title="Express.js"
-      />,
-      <Chip
-        icon={<BiLogoNodejs size="2.6rem" color="#8BC500" />}
-        title="Node.js"
-      />,
-      <Chip
-        icon={<SiJavascript size="2.6rem" color="#efd81d" />}
-        title="Javascript"
-      />,
-      <Chip
-        icon={<SiMongodb size="2.2rem" color="#199555" />}
-        title="MongoDB"
-      />,
+      <Chip icon={<BiLogoReact size="2.6rem" />} title="React.js" />,
+      <Chip icon={<SiExpress size="2.4rem" />} title="Express.js" />,
+      <Chip icon={<BiLogoNodejs size="2.6rem" />} title="Node.js" />,
+      <Chip icon={<BiLogoJavascript size="2.6rem" />} title="Javascript" />,
+      <Chip icon={<SiMongodb size="2.4rem" />} title="MongoDB" />,
     ],
     description:
       "A user-friendly app for writing, reading, " +
@@ -343,12 +248,10 @@ export const projects = [
     projectLiveDemoLink: "https://banking-app-react.netlify.app/",
     technologies: ["React.js", "styled-components"],
     techChips: [
+      <Chip icon={<BiLogoJavascript size="2.6rem" />} title="Javascript" />,
+      <Chip icon={<BiLogoReact size="2.6rem" />} title="React.js" />,
       <Chip
-        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
-        title="React.js"
-      />,
-      <Chip
-        icon={<SiStyledcomponents size="2.6rem" color="#DA7BB6" />}
+        icon={<SiStyledcomponents size="2.6rem" />}
         title="styled-components"
       />,
     ],
@@ -374,14 +277,10 @@ export const projects = [
     projectLiveDemoLink: "https://react-portfolio-ghaith.netlify.app/",
     technologies: ["React.js", "Framer Motion"],
     techChips: [
-      <Chip
-        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
-        title="React.js"
-      />,
-      <Chip
-        icon={<SiFramer size="2.6rem" color="#fff" />}
-        title="Framer Motion"
-      />,
+      <Chip icon={<BiLogoJavascript size="2.6rem" />} title="Javascript" />,
+      <Chip icon={<FaCss3Alt size="2.2rem" />} title="CSS3" />,
+      <Chip icon={<BiLogoReact size="2.6rem" />} title="React.js" />,
+      <Chip icon={<SiFramer size="2.4rem" />} title="Framer Motion" />,
     ],
     description:
       "Personal Portfolio: " +
@@ -401,28 +300,17 @@ export const projects = [
     liveDemo: true,
   },
   {
-    title: "Energy",
+    title: "Energy Tracking App",
     projectThumbnail: "/assets/img/projects/EnergyApp.png",
     projectRepoLink: "https://github.com/Mlika-Gaith/energy-app.git",
     projectLiveDemoLink: "",
     technologies: ["React Native", "Express.js", "Node.js", "MongoDB"],
     techChips: [
-      <Chip
-        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
-        title="React Native"
-      />,
-      <Chip
-        icon={<SiExpress size="2.6rem" color="#fff" />}
-        title="Express.js"
-      />,
-      <Chip
-        icon={<BiLogoNodejs size="2.6rem" color="#8BC500" />}
-        title="Node.js"
-      />,
-      <Chip
-        icon={<SiMongodb size="2.2rem" color="#199555" />}
-        title="MongoDB"
-      />,
+      <Chip icon={<BiLogoJavascript size="2.6rem" />} title="Javascript" />,
+      <Chip icon={<BiLogoReact size="2.6rem" />} title="React Native" />,
+      <Chip icon={<SiExpress size="2.4rem" />} title="Express.js" />,
+      <Chip icon={<SiNodedotjs size="2.4rem" />} title="Node.js" />,
+      <Chip icon={<SiMongodb size="2.4rem" />} title="MongoDB" />,
     ],
     description:
       "A smart mobile app designed for tracking energy consumption" +
@@ -451,12 +339,9 @@ export const projects = [
     projectLiveDemoLink: "",
     technologies: ["Python", "Tensorflow", "Keras"],
     techChips: [
-      <Chip icon={<FaPython size="2.6rem" color="#3470A2" />} title="Python" />,
-      <Chip
-        icon={<SiTensorflow size="2.2rem" color="#FF9200" />}
-        title="Tensorflow"
-      />,
-      <Chip icon={<SiKeras size="2.6rem" color="#D00000" />} title="Keras" />,
+      <Chip icon={<FaPython size="2.6rem" />} title="Python" />,
+      <Chip icon={<SiTensorflow size="2.2rem" />} title="Tensorflow" />,
+      <Chip icon={<SiKeras size="2.2rem" />} title="Keras" />,
     ],
     description:
       "All my projects of Machine Learning and Artificial Intelligence, serving as practical applications of the theoretical knowledge acquired from my AI learning courses.",
