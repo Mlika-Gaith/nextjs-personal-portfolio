@@ -14,12 +14,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         dotGradient: "linear-gradient(180deg,rgb(17,17,17),#A4161A)",
         dotGradientHover: "linear-gradient(180deg,rgb(17,17,17),#A4161A)",
+        certificate: "url('/assets/img/certificate.png')",
       },
       colors: {
         default: "rgb(235,236,243)",
         brand: "#1f2022",
         "brand-tint": "#bdc8a6",
         "brand-pink": "#ca34e4",
+        "brand-bronze": "#e3cbb3",
         "brand-secondary": "#0f0d0a",
         "brand-tertiary": "#615a60",
         background: "#fefaf4",
@@ -38,6 +40,7 @@ const config: Config = {
       fontFamily: {
         bogart: "Bogart",
         "bogart-italic": "Bogart Italic",
+        "bogart-extralight-italic": "Bogart ExtraLight Italic",
         futura: "Futura",
         "futura-book": "Futura Book",
       },

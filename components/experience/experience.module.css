@@ -5,16 +5,16 @@
   @apply border-none;
 }
 .heading {
-  @apply flex items-center justify-between mb-[1.2rem];
+  @apply w-full flex items-center justify-between mb-[1.2rem];
 }
 .title {
-  @apply text-md font-bold font-bogart-italic text-brand;
+  @apply text-[2rem] md:text-md font-bold font-bogart-italic text-brand;
 }
 .company {
   @apply text-brand/80 font-bold;
 }
 .line {
-  @apply w-full h-[25px];
+  @apply w-[70%] md:w-full h-[25px];
 }
 .description {
   @apply mb-[1.8rem] text-brand/80 font-futura-book text-xs;
@@ -23,7 +23,7 @@
   @apply text-brand/80 font-futura text-sm font-bold;
 }
 .location {
-  @apply text-brand/80 font-bogart-italic text-sm;
+  @apply text-brand/80 font-bogart-italic text-sm  sm:text-center;
 }
 .technologies {
   @apply flex flex-wrap gap-[1.2rem];

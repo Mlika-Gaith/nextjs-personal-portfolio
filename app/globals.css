@@ -17,6 +17,13 @@
 }
 
 @font-face {
+  font-family: "Bogart ExtraLight Italic";
+  src: url("../fonts/bogart/Bogart-Extralight-Italic.ttf") format("truetype");
+  font-weight: extra-light;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Futura Book";
   src: url("../fonts/futura/Futura-Book.ttf") format("truetype");
   font-weight: normal;

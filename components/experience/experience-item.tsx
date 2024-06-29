@@ -23,16 +23,16 @@ export const ExpItem: FC<Props> = ({
     <div className={styles.expItem}>
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.title}>{title}</span>
+          <h1 className={styles.title}>{title}</h1>
         </Reveal>
         <Reveal>
-          <span className={styles.date}>{time}</span>
+          <p className={styles.date}>{time}</p>
         </Reveal>
       </div>
 
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.company}>{company}</span>
+          <h3 className={styles.company}>{company}</h3>
           <Image
             src="/assets/svg/line.svg"
             width={50}
@@ -42,7 +42,7 @@ export const ExpItem: FC<Props> = ({
           />
         </Reveal>
         <Reveal>
-          <span className={styles.location}>{location}</span>
+          <p className={styles.location}>{location}</p>
         </Reveal>
       </div>
 
