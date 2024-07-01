@@ -8,7 +8,7 @@ import { Projects } from "@components/projects/projects";
 import { Experience } from "@components/experience/experience";
 import { Contact } from "@components/contact/contact";
 import Certificates from "@components/certificates/certifications";
-
+import { Game } from "@components/game/game";
 export const Home = () => {
   return (
     <div className={styles.home}>
@@ -21,6 +21,7 @@ export const Home = () => {
         <Projects />
         <Experience />
         <Certificates />
+        <Game />
         <Contact />
       </main>
     </div>

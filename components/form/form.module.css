@@ -5,19 +5,19 @@
   @apply mb-8;
 }
 .formLabel {
-  @apply block mb-2.5 font-medium;
+  @apply block mb-2.5 font-medium text-brand-tertiary font-futura-book;
 }
 .formInput {
-  @apply bg-background border-brand border-[1.5px]
-    placeholder-gray-600 text-sm rounded-lg block w-full p-3.5;
+  @apply bg-background border-brand border-[1.5px] text-brand
+    placeholder-brand/70 text-sm rounded-lg block w-full p-3.5 font-futura-book;
 }
 .formBtn {
   @apply flex items-center justify-center gap-[0.8rem]
     w-fit text-sm m-auto transition-all duration-500
-    py-[12px] px-[30px] rounded-[1rem] bg-background-secondary;
+    py-[12px] px-[30px] rounded-[1rem] bg-background-secondary text-brand;
 }
 .formBtn:hover {
-  @apply text-brand;
+  @apply text-brand-pink;
 }
 .messageWrapper {
   @apply my-5 p-5 flex items-center justify-center;
