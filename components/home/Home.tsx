@@ -9,7 +9,26 @@ import { Experience } from "@components/experience/experience";
 import { Contact } from "@components/contact/contact";
 import Certificates from "@components/certificates/certifications";
 import { Game } from "@components/game/game";
+import { useEffect, useState } from "react";
+import { Spinner } from "@components/loaders";
 export const Home = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  });
+  if (isLoading) {
+    return (
+      <div className="bg-background w-full h-screen flex gap-8 items-center justify-center">
+        <Spinner />
+        <p className="font-futura-book text-brand-tertiary">Please Hold</p>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.home}>
       <SideBar />

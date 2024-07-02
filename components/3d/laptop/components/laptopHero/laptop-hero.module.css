@@ -1,5 +1,5 @@
 .heroContainer {
-  @apply text-brand bg-background w-full h-[320px];
+  @apply text-brand bg-background w-full h-[322px];
 }
 
 .heroWrapper {
@@ -37,7 +37,7 @@
 
 @media (min-width: 1400px) {
   .heroContainer {
-    @apply h-[339px];
+    @apply h-[325px];
   }
 }
 

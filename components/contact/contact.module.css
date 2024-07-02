@@ -3,7 +3,7 @@
 }
 
 .contactTitle {
-  @apply text-2xl text-center font-black font-bogart text-brand leading-4 p-14;
+  @apply text-2xl text-center font-black font-bogart text-brand leading-4 p-[4rem];
 }
 .contactTitleDot {
   @apply text-brand-tint;

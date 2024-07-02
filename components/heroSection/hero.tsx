@@ -20,23 +20,13 @@ export const Hero = () => {
     <section className={`section-wrapper ${styles.hero}`}>
       <div className={styles.heroGrid}>
         <div className={styles.textContainer}>
-          <Reveal>
+          <Reveal width="100%">
             <h1 className={styles.title}>
-              Welcome
-              <span className={styles.titleDot}>.</span>
+              Howdy
+              <span className={styles.titleDot}>,</span>
             </h1>
           </Reveal>
-          <Reveal>
-            <h2 className={styles.subTitle}>Software Developer</h2>
-            <Image
-              src="/assets/svg/line.svg"
-              width={50}
-              height={50}
-              alt="line"
-              className={styles.subTitleLine}
-            />
-          </Reveal>
-          <Reveal>
+          <Reveal width="100%">
             <p className={styles.about}>
               Hi there! I'm Ghaith Mlika from Tunisia, a software developer who
               once tried to count all the bugs in my code but lost track after

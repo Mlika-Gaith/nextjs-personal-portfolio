@@ -14,7 +14,7 @@
   @apply w-[200px] h-[216px] rounded-[4px] p-0 overflow-x-hidden overflow-y-auto;
 }
 .wrapper {
-  @apply absolute w-[655px] h-[190px];
+  @apply absolute w-[650px] h-[190px];
   transform: scale(0.5);
   transform-origin: top left;
 }

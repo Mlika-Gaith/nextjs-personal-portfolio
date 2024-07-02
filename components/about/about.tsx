@@ -1,17 +1,35 @@
 "use client";
 import { Reveal, SectionHeader } from "@utils";
 import styles from "./about.module.css";
-import { motion } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
 export const About = () => {
+  const controls = useAnimation();
+  const variants = {
+    visible: { x: 0, opacity: 1 },
+    hidden: { x: -100, opacity: 0 },
+  };
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [isInView, controls]);
+
   return (
     <section id="about" className={`section-wrapper`}>
       <SectionHeader title="About" direction="left" />
       <div className={styles.about}>
         <div className={styles.aboutGrid}>
           <motion.div
-            initial={{ y: -30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={variants}
+            transition={{ duration: 1, delay: 0.4 }}
             className={styles.illustrationContainer}
           >
             <img

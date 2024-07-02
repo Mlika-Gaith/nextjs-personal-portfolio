@@ -50,7 +50,7 @@ export const Reveal: FC<Props> = ({ children, width = "fit-content" }) => {
           bottom: 0,
           left: 0,
           right: 0,
-          background: "#A4161A",
+          background: "#ede8e1",
           zIndex: 20,
         }}
       />

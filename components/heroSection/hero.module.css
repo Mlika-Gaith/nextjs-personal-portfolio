@@ -19,14 +19,6 @@
   @apply font-black text-2xl leading-3 text-brand-tint;
 }
 
-.subTitle {
-  @apply text-lg font-bogart-italic leading-[1.1rem] mt-[1.6rem] text-brand-secondary pt-3;
-}
-
-.subTitleLine {
-  @apply w-full h-[40px] -mb-4;
-}
-
 .about {
   @apply mb-8 mx-0 max-w-[750px] font-medium text-brand/80 font-bogart text-justify;
 }
