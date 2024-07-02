@@ -28,9 +28,11 @@ export const Hero = () => {
           </Reveal>
           <Reveal width="100%">
             <p className={styles.about}>
-              Hi there! I'm Ghaith Mlika from Tunisia, a software developer who
-              once tried to count all the bugs in my code but lost track after
-              discovering they had formed a union.
+              Hey there! I'm Ghaith Mlika, a software developer from Tunisia.
+              Ever tried counting the bugs in my code? I did once, but lost
+              track when they formed a union. Despite their mischief, I've
+              crafted this portfolio to showcase my journey and projects.
+              Welcome aboard and enjoy exploring!
             </p>
           </Reveal>
           <Reveal>
