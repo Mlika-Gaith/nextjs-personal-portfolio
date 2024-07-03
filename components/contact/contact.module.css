@@ -1,36 +1,36 @@
-.contactWrapper{
-    @apply max-w-[700px] m-auto rounded-[1.2rem];
+.contactWrapper {
+  @apply max-w-[700px] m-auto rounded-[1.2rem];
 }
 
-.contactTitle{
-    @apply text-2xl text-center font-black leading-4 p-14;
+.contactTitle {
+  @apply text-2xl text-center font-black font-bogart text-brand leading-4 p-[4rem];
 }
-.contactTitleDot{
-    @apply text-brand;
+.contactTitleDot {
+  @apply text-brand-tint;
 }
-.contactText{
-    @apply text-center font-light my-[2.4rem] mx-0 text-wrap;
+.contactText {
+  @apply text-center font-light font-futura-book text-brand/80 my-[2.4rem] mx-0 text-wrap;
 }
-.contactLink{
-    @apply text-brand;
+.contactLink {
+  @apply text-brand-pink/90;
 }
-.contactLink:hover{
-    @apply underline underline-offset-4;
+.contactLink:hover {
+  @apply underline underline-offset-4 text-brand-pink;
 }
-@media(max-width: 1024px){
-    .contactWrapper{
-        @apply max-w-[90%];
-    }
-}
-
-@media (max-width: 768px){
-    .contactTitle{
-        @apply text-xl;
-    }
+@media (max-width: 1024px) {
+  .contactWrapper {
+    @apply max-w-[90%];
+  }
 }
 
-@media (max-width: 486px){
-    .contactTitle{
-        @apply text-lg;
-    }
+@media (max-width: 768px) {
+  .contactTitle {
+    @apply text-xl;
+  }
+}
+
+@media (max-width: 486px) {
+  .contactTitle {
+    @apply text-lg;
+  }
 }

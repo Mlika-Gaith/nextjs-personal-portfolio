@@ -4,9 +4,8 @@ import { Reveal } from "@utils";
 import { Button } from "@components/buttons";
 import { Suspense, useEffect, useState } from "react";
 import { Scene } from "@components/3d";
-import { Loader } from "@components/loaders";
-import { TypeAnimation } from "react-type-animation";
-import { useScreenWidth } from "@hooks";
+import { Spinner } from "@components/loaders";
+import Image from "next/image";
 
 export const Hero = () => {
   const [show3DScene, setShow3DScene] = useState(false);
@@ -16,77 +15,24 @@ export const Hero = () => {
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
-  // screen width typing
-  const screenWidth = useScreenWidth();
-
-  function getTypingAnimation() {
-    if (screenWidth <= 486) {
-      return (
-        <h2 className={styles.subTitle}>
-          <TypeAnimation
-            sequence={[
-              "Ghaith Mlika",
-              1000,
-              "Software Engineer",
-              1000,
-              "Web Developer",
-              1000,
-              "Mobile Developer",
-              1000,
-            ]}
-            wrapper="span"
-            style={{
-              color: "#A4161A",
-            }}
-            speed={50}
-            repeat={Infinity}
-          />
-        </h2>
-      );
-    }
-    return (
-      <h2 className={styles.subTitle}>
-        {" "}
-        I AM{" "}
-        <TypeAnimation
-          sequence={[
-            "Ghaith Mlika",
-            1000,
-            "a Software Engineer",
-            1000,
-            "a Web Developer",
-            1000,
-            "a Mobile Developer",
-            1000,
-          ]}
-          wrapper="span"
-          style={{
-            color: "#A4161A",
-          }}
-          speed={50}
-          repeat={Infinity}
-        />
-      </h2>
-    );
-  }
 
   return (
     <section className={`section-wrapper ${styles.hero}`}>
       <div className={styles.heroGrid}>
         <div className={styles.textContainer}>
-          <Reveal>
+          <Reveal width="100%">
             <h1 className={styles.title}>
-              Welcome
-              <span className={styles.titleDot}>.</span>
+              Howdy
+              <span className={styles.titleDot}>,</span>
             </h1>
           </Reveal>
-          <Reveal>{getTypingAnimation()}</Reveal>
-          <Reveal>
+          <Reveal width="100%">
             <p className={styles.about}>
-              Nice to meet you ! I am a dedicated software engineer passionate
-              about blending creativity with functionality. Interested in web
-              development and machine learning, I am always eager to learn new
-              technologies. Let's connect and explore the possibilities !
+              Hey there! I'm Ghaith Mlika, a software developer from Tunisia.
+              Ever tried counting the bugs in my code? I did once, but lost
+              track when they formed a union. Despite their mischief, I've
+              crafted this portfolio to showcase my journey and projects.
+              Welcome aboard and enjoy exploring!
             </p>
           </Reveal>
           <Reveal>
@@ -102,7 +48,7 @@ export const Hero = () => {
 
         {/* 3d Laptop SECTION */}
         <div className={styles.objectContainer}>
-          <Suspense fallback={<Loader />}>{show3DScene && <Scene />}</Suspense>
+          <Suspense fallback={<Spinner />}>{show3DScene && <Scene />}</Suspense>
         </div>
       </div>
     </section>

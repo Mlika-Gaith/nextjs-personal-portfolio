@@ -3,6 +3,7 @@ import { SectionHeader } from "@utils";
 import CertificationItem from "./certification-item";
 import styles from "./certification.module.css";
 import { certificates } from "@/constants/certificates";
+import { useScreenWidth } from "@hooks";
 
 type Certification = {
   id: string;
@@ -16,9 +17,11 @@ type Certification = {
 type Props = {};
 
 const Certificates: FC<Props> = () => {
+  const screen = useScreenWidth();
+  const title = screen < 784 ? "Certs" : "Certificates";
   return (
     <section className="section-wrapper" id="certificates">
-      <SectionHeader title="Certificates" direction="right" />
+      <SectionHeader title={title} direction="left" />
       <div className={styles.certifications}>
         {certificates.map((certification: Certification) => (
           <CertificationItem

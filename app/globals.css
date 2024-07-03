@@ -2,46 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    font-size: 62.5%;
-    --toastify-color-progress-dark: #86affc;
+@font-face {
+  font-family: "Bogart";
+  src: url("../fonts/bogart/Bogart-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: medium;
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@font-face {
+  font-family: "Bogart Italic";
+  src: url("../fonts/bogart/Bogart-Medium-Italic.ttf") format("truetype");
+  font-weight: medium;
+  font-style: italic;
 }
 
-*::selection{
-    @apply bg-brand text-default
+@font-face {
+  font-family: "Bogart ExtraLight Italic";
+  src: url("../fonts/bogart/Bogart-Extralight-Italic.ttf") format("truetype");
+  font-weight: extra-light;
+  font-style: italic;
 }
 
-html,body{
-    @apply max-w-[100vw] scroll-smooth text-sm
+@font-face {
+  font-family: "Futura Book";
+  src: url("../fonts/futura/Futura-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-body{
-    @apply text-default bg-background;
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futura/Futura-Heavy.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
 }
 
-a{
-    @apply text-inherit decoration-0 no-underline;
+:root {
+  font-size: 62.5%;
 }
 
-.section-wrapper{
-    @apply relative z-10 max-w-[1250px] m-auto py-[9.6rem] px-[5rem] overflow-hidden;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-
-@media (max-width: 1400px){
-    .section-wrapper{
-        @apply max-w-[1150px];
-    }
+*::selection {
+  @apply bg-brand text-default;
 }
 
-@media (max-width: 786px) { /* Added media query for 786px and below */
-    .section-wrapper {
-        @apply w-auto py-[7.2rem] px-5; /* Adjusted max-w, padding, and margin for 786px and below */
-    }
+html,
+body {
+  @apply max-w-[100vw] scroll-smooth text-sm font-futura font-normal;
+}
+
+body {
+  @apply text-default bg-background;
+}
+
+a {
+  @apply text-inherit decoration-0 no-underline;
+}
+
+.section-wrapper {
+  @apply relative z-10 max-w-[1250px] m-auto py-[9.6rem] px-[5rem] overflow-hidden;
+}
+
+@media (max-width: 1400px) {
+  .section-wrapper {
+    @apply max-w-[1150px];
+  }
+}
+
+@media (max-width: 786px) {
+  /* Added media query for 786px and below */
+  .section-wrapper {
+    @apply w-auto py-[7.2rem] px-5; /* Adjusted max-w, padding, and margin for 786px and below */
+  }
 }

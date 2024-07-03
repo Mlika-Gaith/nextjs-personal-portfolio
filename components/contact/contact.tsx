@@ -16,12 +16,12 @@ export const Contact = () => {
             Open to discuss ? Shoot me an email if you want to connect ! You can
             also find me on{" "}
             <Link
-              href="https://twitter.com/GaithMlika"
+              href="https://discordapp.com/users/1241436933167517788"
               target="_blank"
               rel="nofollow"
               className={styles.contactLink}
             >
-              Twitter
+              Discord
             </Link>{" "}
             Or{" "}
             <Link

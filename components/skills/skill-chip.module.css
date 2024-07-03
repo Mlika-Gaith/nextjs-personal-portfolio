@@ -1,9 +1,13 @@
 .skillChipsWrapper {
-  @apply flex items-center  mb-[2.4rem];
+  @apply flex flex-col justify-center items-start py-4 mb-[2.4rem];
 }
 
 .skillChipTitle {
-  @apply text-md font-bold relative ml-[0.8rem];
+  @apply text-md font-bogart-italic leading-[1.1rem] text-brand relative ml-[0.8rem];
+}
+
+.line {
+  @apply w-1/2 h-[25px] -mb-4;
 }
 
 .skillChipGroup {

@@ -1,41 +1,41 @@
-.form{
-    @apply size-full flex flex-col mx-0 my-8;
+.form {
+  @apply size-full flex flex-col mx-0 my-8;
 }
-.formGroup{
-    @apply mb-8;
+.formGroup {
+  @apply mb-8;
 }
-.formLabel{
-    @apply block mb-2.5 font-medium;
+.formLabel {
+  @apply block mb-2.5 font-medium text-brand-tertiary font-futura-book;
 }
-.formInput{
-    @apply bg-background border-brand border-[1.5px]
-    placeholder-gray-600 text-sm rounded-lg block w-full p-3.5;
+.formInput {
+  @apply bg-background border-brand border-[1.5px] text-brand
+    placeholder-brand/70 text-sm rounded-lg block w-full p-3.5 font-futura-book;
 }
-.formBtn{
-    @apply flex items-center justify-center gap-[0.8rem]
+.formBtn {
+  @apply flex items-center justify-center gap-[0.8rem]
     w-fit text-sm m-auto transition-all duration-500
-    py-[12px] px-[30px] rounded-[1rem] bg-background-light;
+    py-[12px] px-[30px] rounded-[1rem] bg-background-secondary text-brand;
 }
-.formBtn:hover{
-    @apply text-brand;
+.formBtn:hover {
+  @apply text-brand-pink;
 }
-.messageWrapper{
-    @apply my-5 p-5 flex items-center justify-center;
+.messageWrapper {
+  @apply my-5 p-5 flex items-center justify-center;
 }
-.message{
-    @apply text-xs font-medium;
+.message {
+  @apply text-xs font-medium;
 }
-.messageSuccess{
-    @apply text-green-500;
+.messageSuccess {
+  @apply text-green-500;
 }
-.messageError{
-    @apply text-red-500;
+.messageError {
+  @apply text-red-500;
 }
-@media (max-width: 786px){
-    .formLabel{
-        @apply text-xs;
-    }
-    .formInput{
-        @apply text-xs;
-    }
+@media (max-width: 786px) {
+  .formLabel {
+    @apply text-xs;
+  }
+  .formInput {
+    @apply text-xs;
+  }
 }

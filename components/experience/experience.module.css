@@ -1,26 +1,38 @@
-.expItem{
-    @apply mb-[2.4rem] py-8 px-[1.2rem] border-b border-background-light;
+.expItem {
+  @apply mb-[2.4rem] py-8 px-[1.2rem] border-b border-brand-tertiary pb-12;
 }
-.heading{
-    @apply flex items-center justify-between mb-[1.2rem];
+.expItem:last-child {
+  @apply border-none;
 }
-.title{
-    @apply text-md font-bold;
+.heading {
+  @apply w-full flex items-center justify-between mb-[1.2rem];
 }
-.company{
-    @apply text-brand font-bold;
+.title {
+  @apply text-[2rem] md:text-md font-bold font-bogart-italic text-brand;
 }
-.description{
-    @apply mb-[1.8rem] font-extralight;
+.company {
+  @apply text-brand/80 font-bold;
 }
-.technologies{
-    @apply flex flex-wrap gap-[1.2rem];
+.line {
+  @apply w-[70%] md:w-full h-[25px];
 }
-@media (max-width: 1024px){
-    .heading{
-        @apply items-start;
-    }
-    .expItem{
-        @apply px-0;
-    }
+.description {
+  @apply mb-[1.8rem] text-brand/80 font-futura-book text-xs;
+}
+.date {
+  @apply text-brand/80 font-futura text-sm font-bold;
+}
+.location {
+  @apply text-brand/80 font-bogart-italic text-sm  sm:text-center;
+}
+.technologies {
+  @apply flex flex-wrap gap-[1.2rem];
+}
+@media (max-width: 1024px) {
+  .heading {
+    @apply items-start;
+  }
+  .expItem {
+    @apply px-0;
+  }
 }

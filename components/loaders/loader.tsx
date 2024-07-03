@@ -1,14 +1,5 @@
-import {Triangle} from "react-loader-spinner";
+import { FiLoader } from "react-icons/fi";
 
-export const Loader = () => {
-    return (
-        <Triangle
-            visible={true}
-            height="80"
-            width="80"
-            color="#A4161A"
-            ariaLabel="triangle-loading"
-            wrapperStyle={{width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center'}}
-        />
-    );
+export const Spinner = () => {
+  return <FiLoader className="w-10 h-10 text-brand-tertiary animate-spin" />;
 };

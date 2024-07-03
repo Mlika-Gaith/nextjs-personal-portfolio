@@ -1,0 +1,61 @@
+.gameContainer {
+  @apply max-w-[700px] m-auto rounded-[1.2rem];
+}
+.gameWrapper {
+  @apply w-full bg-background-secondary cursor-pointer relative aspect-[16/9] rounded-xl overflow-hidden;
+}
+.game {
+  @apply w-[85%] h-[90%] absolute bottom-0 left-1/2 rounded-[0.4rem] transition-all delay-300 translate-y-[10%] translate-x-[-50%];
+}
+.gameTitle {
+  @apply text-2xl text-center font-black font-bogart text-brand leading-4 p-[4rem];
+}
+
+.gameTitleDot {
+  @apply text-brand-tint;
+}
+
+.gameTitleLine {
+  @apply w-full h-[40px];
+}
+
+.gameDescription {
+  @apply font-futura-book font-normal text-brand/80 text-pretty text-justify my-6 mb-10;
+}
+
+.gameLink {
+  @apply text-brand-pink font-bogart-italic underline underline-offset-4 opacity-90;
+}
+
+.gameLink:hover {
+  @apply opacity-100;
+}
+
+.gameRepoLink {
+  @apply w-full text-brand/80 font-bogart font-medium flex items-center justify-center underline underline-offset-4 text-sm cursor-pointer my-6;
+}
+
+.gameRepoLink {
+  @apply text-brand;
+}
+
+@media (max-width: 1024px) {
+  .gameContainer {
+    @apply max-w-[90%];
+  }
+  .gameText {
+    @apply text-sm leading-10;
+  }
+}
+
+@media (max-width: 768px) {
+  .gameTitle {
+    @apply text-xl pb-6;
+  }
+}
+
+@media (max-width: 486px) {
+  .gameTitle {
+    @apply text-lg pb-2;
+  }
+}

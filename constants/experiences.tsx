@@ -16,7 +16,7 @@ import {
   BiLogoGithub,
   BiLogoGitlab,
 } from "react-icons/bi";
-import HuggingFace from "@public/assets/huggingface.svg";
+import HuggingFace from "@public/assets/svg/huggingface.png";
 import Image from "next/image";
 
 export const experiences = [
@@ -27,53 +27,27 @@ export const experiences = [
     time: "Feb 2023 - June 2023",
     location: "Sousse, Tunisia",
     description:
-      "Develop an intelligent mobile app for an industrial company, " +
-      "enabling the recognition, classification, " +
-      "and extraction of relevant data from packing documents.",
+      "During my internship at GPRO as a Full Stack and AI Developer, I developed an intelligent mobile application for an industrial client. The application processes, recognizes, and classifies documents, with a primary feature being the recognition and extraction of specific text fields. This functionality greatly facilitated stock management operations for the client.",
     technologies: [
-      <Chip
-        icon={<BiLogoJavascript size="2.6rem" color="#F7DF1E" />}
-        title="Javascript"
-      />,
-      <Chip
-        icon={<BiLogoPython size="2.6rem" color="#366C9C" />}
-        title="Python"
-      />,
-      <Chip
-        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
-        title="React Native"
-      />,
-      <Chip
-        icon={<SiFastapi size="2.2rem" color="#089D8E" />}
-        title="FastAPI"
-      />,
-      <Chip
-        icon={<SiPytorch size="2.2rem" color="#EF5233" />}
-        title="Pytorch"
-      />,
-      <Chip
-        icon={<SiTensorflow size="2.2rem" color="#FF9200" />}
-        title="Tensorflow"
-      />,
+      <Chip icon={<BiLogoJavascript size="2.6rem" />} title="Javascript" />,
+      <Chip icon={<BiLogoPython size="2.6rem" />} title="Python" />,
+      <Chip icon={<BiLogoReact size="2.6rem" />} title="React Native" />,
+      <Chip icon={<SiFastapi size="2.4rem" />} title="FastAPI" />,
+      <Chip icon={<SiPytorch size="2.4rem" />} title="Pytorch" />,
+      <Chip icon={<SiTensorflow size="2.4rem" />} title="Tensorflow" />,
       <Chip
         icon={
-          <Image src={HuggingFace} alt="Hugging Face" height={26} width={26} />
+          <Image src={HuggingFace} alt="Hugging Face" height={22} width={22} />
         }
         title="LayoutLMV3"
       />,
-      <Chip
-        icon={<SiPostgresql size="2.2rem" color="#396C94" />}
-        title="PostgreSQL"
-      />,
-      <Chip icon={<BiLogoGit size="2.6rem" color="#F05639" />} title="Git" />,
-      <Chip icon={<BiLogoGithub size="2.6rem" color="#000" />} title="Gitub" />,
-      <Chip
-        icon={<BiLogoGitlab size="2.6rem" color="#FC7016" />}
-        title="Gitlab"
-      />,
+      <Chip icon={<SiPostgresql size="2.4rem" />} title="PostgreSQL" />,
+      <Chip icon={<BiLogoGit size="2.6rem" />} title="Git" />,
+      <Chip icon={<BiLogoGithub size="2.6rem" />} title="Gitub" />,
+      <Chip icon={<BiLogoGitlab size="2.4rem" />} title="Gitlab" />,
       <Chip
         icon={
-          <Image src={HuggingFace} alt="Hugging Face" height={26} width={26} />
+          <Image src={HuggingFace} alt="Hugging Face" height={22} width={22} />
         }
         title="HuggingFace Hub"
       />,
@@ -86,30 +60,15 @@ export const experiences = [
     time: "July 2022 - Sept 2022",
     location: "Sousse, Tunisia",
     description:
-      "Develop a smart mobile app focused on energy tracking and cost estimation.",
+      "For my first internship, I dove into the remote world—working in pajamas was a given! I developed an intelligent mobile app for tracking electric energy usage and estimating costs. Just snap a picture of your energy monitor, and let the app handle the rest.",
     technologies: [
-      <Chip
-        icon={<BiLogoJavascript size="2.6rem" color="#F7DF1E" />}
-        title="Javascript"
-      />,
-      <Chip
-        icon={<BiLogoReact size="2.6rem" color="#66DBFB" />}
-        title="React Native"
-      />,
-      <Chip
-        icon={<SiExpress size="2.6rem" color="#fff" />}
-        title="Express.js"
-      />,
-      <Chip
-        icon={<SiMongodb size="2.2rem" color="#199555" />}
-        title="MongoDB"
-      />,
-      <Chip
-        icon={<BiLogoGoogle size="2.2rem" color="#E44432" />}
-        title="Google Vision API"
-      />,
-      <Chip icon={<BiLogoGit size="2.6rem" color="#F05639" />} title="Git" />,
-      <Chip icon={<BiLogoGithub size="2.6rem" color="#000" />} title="Gitub" />,
+      <Chip icon={<BiLogoJavascript size="2.6rem" />} title="Javascript" />,
+      <Chip icon={<BiLogoReact size="2.6rem" />} title="React Native" />,
+      <Chip icon={<SiExpress size="2.4rem" />} title="Express.js" />,
+      <Chip icon={<SiMongodb size="2.4rem" />} title="MongoDB" />,
+      <Chip icon={<BiLogoGoogle size="2.26rem" />} title="Google Vision API" />,
+      <Chip icon={<BiLogoGit size="2.6rem" />} title="Git" />,
+      <Chip icon={<BiLogoGithub size="2.6rem" />} title="Gitub" />,
     ],
   },
 ];
