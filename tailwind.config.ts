@@ -9,11 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        dotGradient: "linear-gradient(180deg,rgb(17,17,17),#A4161A)",
-        dotGradientHover: "linear-gradient(180deg,rgb(17,17,17),#A4161A)",
         certificate: "url('/assets/img/certificate.png')",
       },
       colors: {

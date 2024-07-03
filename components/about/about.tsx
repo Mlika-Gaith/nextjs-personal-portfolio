@@ -29,7 +29,7 @@ export const About = () => {
             initial="hidden"
             animate={controls}
             variants={variants}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className={styles.illustrationContainer}
           >
             <img
